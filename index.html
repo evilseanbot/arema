@@ -110,7 +110,7 @@
 	scene.add(markerRoot)
 	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
 		type : 'pattern',
-		patternUrl : "https://jeromeetienne.github.io/AR.js/data/data/patt.hiro"
+		patternUrl : "break.patt"
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.kanji'
 	})
 
@@ -131,24 +131,32 @@
 
 	var arWorldRoot = smoothedRoot
 
-        var pointColor = "#ffffff";
-        var directionalLight = new THREE.DirectionalLight(pointColor);
-        directionalLight.position.set(-40, 60, -10);
-        directionalLight.castShadow = true;
-        directionalLight.shadowCameraNear = 2;
-        directionalLight.shadowCameraFar = 200;
-        directionalLight.shadowCameraLeft = -50;
-        directionalLight.shadowCameraRight = 50;
-        directionalLight.shadowCameraTop = 50;
-        directionalLight.shadowCameraBottom = -50;
-        directionalLight.distance = 0;
-        directionalLight.intensity = 0.5;
-        directionalLight.shadowMapHeight = 1024;
-        directionalLight.shadowMapWidth = 1024;
-        scene.add(directionalLight);
+    var pointColor = "#ffffff";
+    var directionalLight = new THREE.DirectionalLight(pointColor);
+    directionalLight.position.set(-40, 60, -10);
+    directionalLight.castShadow = true;
+    directionalLight.shadowCameraNear = 2;
+    directionalLight.shadowCameraFar = 200;
+    directionalLight.shadowCameraLeft = -50;
+    directionalLight.shadowCameraRight = 50;
+    directionalLight.shadowCameraTop = 50;
+    directionalLight.shadowCameraBottom = -50;
+    directionalLight.distance = 0;
+    directionalLight.intensity = 0.5;
+    directionalLight.shadowMapHeight = 1024;
+    directionalLight.shadowMapWidth = 1024;
+    scene.add(directionalLight);
 
-    var light = new THREE.AmbientLight( 0x444444 ); // soft white light
+    var light = new THREE.AmbientLight( 0x222222 ); // soft white light
 	scene.add( light );
+
+	//directionalLight.intensity = 1;
+	//directionalLight.color = 0xffffff;
+
+	//onRenderFcts.push(function(delta){
+    //    directionalLight.position.set(50 * Math.cos(new Date().getTime()/75), 50 * Math.sin(new Date().getTime()/75), -10);
+	//})
+
 
 	// add a torus knot	
 	/*var geometry	= new THREE.CubeGeometry(1,0.1,1);
@@ -177,7 +185,7 @@
 	}
 
 	var lizardTimer = 0;
-	var timeToAddLizard = 100;
+	var timeToAddLizard = 200;
 
 	function addLizardInTime() {
 		lizardTimer++;
@@ -219,14 +227,36 @@
 
 	}
 
+	var lizards = [];
+
 	function addLizard() {
 		var lizard = lizardPrototype.clone();
-		lizard.rotation.set(Math.random() * -2, -1 + (Math.random() * 2), 0);
+		lizard.rotation.set(Math.random() * -3, -1.5 + (Math.random() * 3), 0);
 		//lizard.rotatio
 		//lizard.rotation.x = Math.random() * 180;
 
+		lizard.finalSize = 0.004;
+		lizard.growing = true;
+		lizard.growTimer = 1;
+		lizard.timeToGrow = 500;
+
+		if (phase == 2) {
+	        lizard.children[0].material = new THREE.MeshLambertMaterial({color: 0xff0000, transparent: true, opacity: 1});	    	
+	    }
+
 		lizard.move = function() {
-        	this.translateZ(0.005);
+        	this.translateZ(0.008);
+	        this.children[0].material.opacity = creatureOpacity;
+
+	        if (this.growing) {
+	        	this.growTimer++;
+	        	var currentSize = this.finalSize * (this.growTimer / this.timeToGrow);
+	        	this.scale.set(currentSize, currentSize, currentSize);
+
+	        	if (this.growTimer > this.timeToGrow) {
+	        		this.growing = false;
+	        	}
+	        }
         }		
 
 		arWorldRoot.add(lizard);		
@@ -234,6 +264,8 @@
 		onRenderFcts.push(() => {
         	lizard.move();
 		});
+
+		lizards.push(lizard);
 
 	}	
 
@@ -249,14 +281,13 @@
 	var lizardPrototype;
 
     loader.load('lizard.fbx', function (object3d) {
-        object3d.scale.set(0.001, 0.001, 0.001);
+        //object3d.scale.set(0.001, 0.001, 0.001);
+        object3d.scale.set(0.00001, 0.00001, 0.00001);
         object3d.position.set(0, 0, 0);
         lizardPrototype = object3d;
 
-        console.log("Lizard");
-        console.log(lizardPrototype);
+        lizardPrototype.children[0].material = new THREE.MeshLambertMaterial({color: 0x44bb44, transparent: true, opacity: 1});
 
-        lizardPrototype.children[0].material = new THREE.MeshLambertMaterial({color: 0x00ff00, transparent: true, opacity: 1});
 
         lizardPrototype.move = function() {
         	this.translateZ(1);
@@ -267,7 +298,61 @@
 
     });
 
+    var creatureOpacity = 1;
 
+    onRenderFcts.push(() => {
+    	creatureOpacity = 0.55 + Math.sin(new Date().getTime()/2000) * 0.45;
+	});
+
+    var phase = 1;
+
+	onRenderFcts.push(() => {
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4) {
+				var newPhase = parseInt(this.responseText);
+
+				if (newPhase != phase) {
+					if (newPhase == 1) {
+						timeToAddLizard = 200;
+
+						directionalLight.position.set(-40, 60, -10);
+
+						light.intensity = 1;
+						directionalLight.intensity = 0.5;
+
+						for (var lizard of lizards) {
+							lizard.children[0].material = new THREE.MeshLambertMaterial({color: 0x44bb44, transparent: true, opacity: 1});
+						}
+
+					} else if (newPhase == 2) {
+						timeToAddLizard = 50;
+
+						light.intensity = 0;
+						directionalLight.intensity = 1;
+						//directionalLight.color = 0xffffff;
+
+						onRenderFcts.push(() => {
+							if (phase == 2) {
+		    					directionalLight.position.set(50 * Math.cos(new Date().getTime()/75), 50 * Math.sin(new Date().getTime()/75), -10);
+		    				}
+
+						});
+
+						for (var lizard of lizards) {
+							lizard.children[0].material = new THREE.MeshLambertMaterial({color: 0xff0000, transparent: true, opacity: 1});
+						}
+
+					} 
+				}
+
+				phase = newPhase;
+			}
+
+		}
+		xhttp.open("GET", "phase.txt", true);
+		xhttp.send();
+	});
 
 	/*var geometry	= new THREE.TorusKnotGeometry(0.3,0.1,64,16);
 	var material	= new THREE.MeshNormalMaterial(); 
