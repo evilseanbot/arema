@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "http://www.fembreak.com", "destination": "index.html" }
+  ]
+}

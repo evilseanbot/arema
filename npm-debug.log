@@ -1,0 +1,2122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--global',
+1 verbose cli   'serve-https' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData serve-https
+8 silly fetchNamedPackageData serve-https
+9 silly mapToRegistry name serve-https
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'serve-https',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'serve-https',
+12 silly mapToRegistry   name: 'serve-https',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/serve-https
+14 verbose request uri https://registry.npmjs.org/serve-https
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 9:12:28 PM
+17 verbose request id f1227c289ff1ab71
+18 verbose etag W/"e49833d16d726edb085a32b66b40ef3d"
+19 verbose lastModified Sun, 27 May 2018 17:01:31 GMT
+20 http request GET https://registry.npmjs.org/serve-https
+21 http 304 https://registry.npmjs.org/serve-https
+22 verbose headers { date: 'Sun, 10 Jun 2018 04:12:25 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'set-cookie': [ '__cfduid=dd67d86adec5471068ffd27504475b00d1528603945; expires=Mon, 10-Jun-19 04:12:25 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   'cf-cache-status': 'HIT',
+22 verbose headers   'cf-ray': '4288ffe538be7a05-SEA',
+22 verbose headers   etag: '"e49833d16d726edb085a32b66b40ef3d"',
+22 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 verbose headers   'last-modified': 'Sun, 27 May 2018 17:01:31 GMT',
+22 verbose headers   vary: 'accept-encoding, accept',
+22 verbose headers   server: 'cloudflare' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Sun, 10 Jun 2018 04:12:25 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'set-cookie': [ '__cfduid=dd67d86adec5471068ffd27504475b00d1528603945; expires=Mon, 10-Jun-19 04:12:25 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'cf-cache-status': 'HIT',
+23 silly get     'cf-ray': '4288ffe538be7a05-SEA',
+23 silly get     etag: '"e49833d16d726edb085a32b66b40ef3d"',
+23 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly get     'last-modified': 'Sun, 27 May 2018 17:01:31 GMT',
+23 silly get     vary: 'accept-encoding, accept',
+23 silly get     server: 'cloudflare' } ]
+24 verbose etag https://registry.npmjs.org/serve-https from cache
+25 verbose get saving serve-https to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\serve-https\.cache.json
+26 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule serve-https@2.2.1 checking installable status
+40 silly cache add args [ 'serve-https', null ]
+41 verbose cache add spec serve-https
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'serve-https',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'serve-https',
+42 silly cache add   name: 'serve-https',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed serve-https@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for serve-https
+45 info addNameTag [ 'serve-https', 'latest' ]
+46 silly mapToRegistry name serve-https
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'serve-https',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'serve-https',
+49 silly mapToRegistry   name: 'serve-https',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/serve-https
+51 verbose addNameTag registry:https://registry.npmjs.org/serve-https not in flight; fetching
+52 verbose get https://registry.npmjs.org/serve-https not expired, no request
+53 silly addNameTag next cb for serve-https with tag latest
+54 silly addNamed serve-https@2.2.1
+55 verbose addNamed "2.2.1" is a plain semver version for serve-https
+56 silly cache afterAdd serve-https@2.2.1
+57 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\serve-https\2.2.1\package\package.json not in flight; writing
+58 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+59 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\serve-https\2.2.1\package\package.json written
+60 silly fetchNamedPackageData bluebird
+61 silly mapToRegistry name bluebird
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'bluebird',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   escapedName: 'bluebird',
+64 silly mapToRegistry   name: 'bluebird',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/bluebird
+66 silly fetchNamedPackageData finalhandler
+67 silly mapToRegistry name finalhandler
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry data Result {
+70 silly mapToRegistry   raw: 'finalhandler',
+70 silly mapToRegistry   scope: null,
+70 silly mapToRegistry   escapedName: 'finalhandler',
+70 silly mapToRegistry   name: 'finalhandler',
+70 silly mapToRegistry   rawSpec: '',
+70 silly mapToRegistry   spec: 'latest',
+70 silly mapToRegistry   type: 'tag' }
+71 silly mapToRegistry uri https://registry.npmjs.org/finalhandler
+72 silly fetchNamedPackageData httpolyglot
+73 silly mapToRegistry name httpolyglot
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry data Result {
+76 silly mapToRegistry   raw: 'httpolyglot',
+76 silly mapToRegistry   scope: null,
+76 silly mapToRegistry   escapedName: 'httpolyglot',
+76 silly mapToRegistry   name: 'httpolyglot',
+76 silly mapToRegistry   rawSpec: '',
+76 silly mapToRegistry   spec: 'latest',
+76 silly mapToRegistry   type: 'tag' }
+77 silly mapToRegistry uri https://registry.npmjs.org/httpolyglot
+78 silly fetchNamedPackageData ipify
+79 silly mapToRegistry name ipify
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry data Result {
+82 silly mapToRegistry   raw: 'ipify',
+82 silly mapToRegistry   scope: null,
+82 silly mapToRegistry   escapedName: 'ipify',
+82 silly mapToRegistry   name: 'ipify',
+82 silly mapToRegistry   rawSpec: '',
+82 silly mapToRegistry   spec: 'latest',
+82 silly mapToRegistry   type: 'tag' }
+83 silly mapToRegistry uri https://registry.npmjs.org/ipify
+84 silly fetchNamedPackageData le-challenge-sni
+85 silly mapToRegistry name le-challenge-sni
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry data Result {
+88 silly mapToRegistry   raw: 'le-challenge-sni',
+88 silly mapToRegistry   scope: null,
+88 silly mapToRegistry   escapedName: 'le-challenge-sni',
+88 silly mapToRegistry   name: 'le-challenge-sni',
+88 silly mapToRegistry   rawSpec: '',
+88 silly mapToRegistry   spec: 'latest',
+88 silly mapToRegistry   type: 'tag' }
+89 silly mapToRegistry uri https://registry.npmjs.org/le-challenge-sni
+90 silly fetchNamedPackageData livereload
+91 silly mapToRegistry name livereload
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry data Result {
+94 silly mapToRegistry   raw: 'livereload',
+94 silly mapToRegistry   scope: null,
+94 silly mapToRegistry   escapedName: 'livereload',
+94 silly mapToRegistry   name: 'livereload',
+94 silly mapToRegistry   rawSpec: '',
+94 silly mapToRegistry   spec: 'latest',
+94 silly mapToRegistry   type: 'tag' }
+95 silly mapToRegistry uri https://registry.npmjs.org/livereload
+96 silly fetchNamedPackageData localhost.daplie.me-certificates
+97 silly mapToRegistry name localhost.daplie.me-certificates
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'localhost.daplie.me-certificates',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   escapedName: 'localhost.daplie.me-certificates',
+100 silly mapToRegistry   name: 'localhost.daplie.me-certificates',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri https://registry.npmjs.org/localhost.daplie.me-certificates
+102 silly fetchNamedPackageData minimist
+103 silly mapToRegistry name minimist
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry data Result {
+106 silly mapToRegistry   raw: 'minimist',
+106 silly mapToRegistry   scope: null,
+106 silly mapToRegistry   escapedName: 'minimist',
+106 silly mapToRegistry   name: 'minimist',
+106 silly mapToRegistry   rawSpec: '',
+106 silly mapToRegistry   spec: 'latest',
+106 silly mapToRegistry   type: 'tag' }
+107 silly mapToRegistry uri https://registry.npmjs.org/minimist
+108 silly fetchNamedPackageData proxy-addr
+109 silly mapToRegistry name proxy-addr
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry data Result {
+112 silly mapToRegistry   raw: 'proxy-addr',
+112 silly mapToRegistry   scope: null,
+112 silly mapToRegistry   escapedName: 'proxy-addr',
+112 silly mapToRegistry   name: 'proxy-addr',
+112 silly mapToRegistry   rawSpec: '',
+112 silly mapToRegistry   spec: 'latest',
+112 silly mapToRegistry   type: 'tag' }
+113 silly mapToRegistry uri https://registry.npmjs.org/proxy-addr
+114 silly fetchNamedPackageData redirect-https
+115 silly mapToRegistry name redirect-https
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry data Result {
+118 silly mapToRegistry   raw: 'redirect-https',
+118 silly mapToRegistry   scope: null,
+118 silly mapToRegistry   escapedName: 'redirect-https',
+118 silly mapToRegistry   name: 'redirect-https',
+118 silly mapToRegistry   rawSpec: '',
+118 silly mapToRegistry   spec: 'latest',
+118 silly mapToRegistry   type: 'tag' }
+119 silly mapToRegistry uri https://registry.npmjs.org/redirect-https
+120 silly fetchNamedPackageData serve-index
+121 silly mapToRegistry name serve-index
+122 silly mapToRegistry using default registry
+123 silly mapToRegistry registry https://registry.npmjs.org/
+124 silly mapToRegistry data Result {
+124 silly mapToRegistry   raw: 'serve-index',
+124 silly mapToRegistry   scope: null,
+124 silly mapToRegistry   escapedName: 'serve-index',
+124 silly mapToRegistry   name: 'serve-index',
+124 silly mapToRegistry   rawSpec: '',
+124 silly mapToRegistry   spec: 'latest',
+124 silly mapToRegistry   type: 'tag' }
+125 silly mapToRegistry uri https://registry.npmjs.org/serve-index
+126 silly fetchNamedPackageData serve-static
+127 silly mapToRegistry name serve-static
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry data Result {
+130 silly mapToRegistry   raw: 'serve-static',
+130 silly mapToRegistry   scope: null,
+130 silly mapToRegistry   escapedName: 'serve-static',
+130 silly mapToRegistry   name: 'serve-static',
+130 silly mapToRegistry   rawSpec: '',
+130 silly mapToRegistry   spec: 'latest',
+130 silly mapToRegistry   type: 'tag' }
+131 silly mapToRegistry uri https://registry.npmjs.org/serve-static
+132 silly fetchNamedPackageData server-destroy
+133 silly mapToRegistry name server-destroy
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry data Result {
+136 silly mapToRegistry   raw: 'server-destroy',
+136 silly mapToRegistry   scope: null,
+136 silly mapToRegistry   escapedName: 'server-destroy',
+136 silly mapToRegistry   name: 'server-destroy',
+136 silly mapToRegistry   rawSpec: '',
+136 silly mapToRegistry   spec: 'latest',
+136 silly mapToRegistry   type: 'tag' }
+137 silly mapToRegistry uri https://registry.npmjs.org/server-destroy
+138 silly fetchOtherPackageData daplie-tunnel@git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master
+139 silly cache add args [ 'daplie-tunnel@git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master',
+139 silly cache add   null ]
+140 verbose cache add spec daplie-tunnel@git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master
+141 silly fetchOtherPackageData ddns-cli@git+https://git.daplie.com/Daplie/node-ddns-client.git#master
+142 silly cache add args [ 'ddns-cli@git+https://git.daplie.com/Daplie/node-ddns-client.git#master',
+142 silly cache add   null ]
+143 verbose cache add spec ddns-cli@git+https://git.daplie.com/Daplie/node-ddns-client.git#master
+144 silly fetchOtherPackageData greenlock@git+https://git.daplie.com/Daplie/node-greenlock.git#master
+145 silly cache add args [ 'greenlock@git+https://git.daplie.com/Daplie/node-greenlock.git#master',
+145 silly cache add   null ]
+146 verbose cache add spec greenlock@git+https://git.daplie.com/Daplie/node-greenlock.git#master
+147 silly fetchOtherPackageData greenlock-express@git+https://git.daplie.com/Daplie/greenlock-express.git#master
+148 silly cache add args [ 'greenlock-express@git+https://git.daplie.com/Daplie/greenlock-express.git#master',
+148 silly cache add   null ]
+149 verbose cache add spec greenlock-express@git+https://git.daplie.com/Daplie/greenlock-express.git#master
+150 silly fetchOtherPackageData le-challenge-ddns@git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master
+151 silly cache add args [ 'le-challenge-ddns@git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master',
+151 silly cache add   null ]
+152 verbose cache add spec le-challenge-ddns@git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master
+153 silly fetchOtherPackageData le-challenge-fs@git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master
+154 silly cache add args [ 'le-challenge-fs@git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master',
+154 silly cache add   null ]
+155 verbose cache add spec le-challenge-fs@git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master
+156 silly fetchOtherPackageData oauth3-cli@git+https://git.daplie.com/OAuth3/oauth3-cli.git#master
+157 silly cache add args [ 'oauth3-cli@git+https://git.daplie.com/OAuth3/oauth3-cli.git#master',
+157 silly cache add   null ]
+158 verbose cache add spec oauth3-cli@git+https://git.daplie.com/OAuth3/oauth3-cli.git#master
+159 silly fetchOtherPackageData stunnel@git+https://git.daplie.com/Daplie/node-tunnel-client.git#master
+160 silly cache add args [ 'stunnel@git+https://git.daplie.com/Daplie/node-tunnel-client.git#master',
+160 silly cache add   null ]
+161 verbose cache add spec stunnel@git+https://git.daplie.com/Daplie/node-tunnel-client.git#master
+162 silly cache add parsed spec Result {
+162 silly cache add   raw: 'daplie-tunnel@git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master',
+162 silly cache add   scope: null,
+162 silly cache add   escapedName: 'daplie-tunnel',
+162 silly cache add   name: 'daplie-tunnel',
+162 silly cache add   rawSpec: 'git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master',
+162 silly cache add   spec: 'https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master',
+162 silly cache add   type: 'git' }
+163 verbose addRemoteGit caching git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master
+164 silly tryClone cloning git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master via git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master
+165 verbose tryClone git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b not in flight; caching
+166 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+167 silly cache add parsed spec Result {
+167 silly cache add   raw: 'ddns-cli@git+https://git.daplie.com/Daplie/node-ddns-client.git#master',
+167 silly cache add   scope: null,
+167 silly cache add   escapedName: 'ddns-cli',
+167 silly cache add   name: 'ddns-cli',
+167 silly cache add   rawSpec: 'git+https://git.daplie.com/Daplie/node-ddns-client.git#master',
+167 silly cache add   spec: 'https://git.daplie.com/Daplie/node-ddns-client.git#master',
+167 silly cache add   type: 'git' }
+168 verbose addRemoteGit caching git+https://git.daplie.com/Daplie/node-ddns-client.git#master
+169 silly tryClone cloning git+https://git.daplie.com/Daplie/node-ddns-client.git#master via git+https://git.daplie.com/Daplie/node-ddns-client.git#master
+170 verbose tryClone git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266 not in flight; caching
+171 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes correctMkdir already in flight; waiting
+172 silly cache add parsed spec Result {
+172 silly cache add   raw: 'greenlock@git+https://git.daplie.com/Daplie/node-greenlock.git#master',
+172 silly cache add   scope: null,
+172 silly cache add   escapedName: 'greenlock',
+172 silly cache add   name: 'greenlock',
+172 silly cache add   rawSpec: 'git+https://git.daplie.com/Daplie/node-greenlock.git#master',
+172 silly cache add   spec: 'https://git.daplie.com/Daplie/node-greenlock.git#master',
+172 silly cache add   type: 'git' }
+173 verbose addRemoteGit caching git+https://git.daplie.com/Daplie/node-greenlock.git#master
+174 silly tryClone cloning git+https://git.daplie.com/Daplie/node-greenlock.git#master via git+https://git.daplie.com/Daplie/node-greenlock.git#master
+175 verbose tryClone git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1 not in flight; caching
+176 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes correctMkdir already in flight; waiting
+177 silly cache add parsed spec Result {
+177 silly cache add   raw: 'greenlock-express@git+https://git.daplie.com/Daplie/greenlock-express.git#master',
+177 silly cache add   scope: null,
+177 silly cache add   escapedName: 'greenlock-express',
+177 silly cache add   name: 'greenlock-express',
+177 silly cache add   rawSpec: 'git+https://git.daplie.com/Daplie/greenlock-express.git#master',
+177 silly cache add   spec: 'https://git.daplie.com/Daplie/greenlock-express.git#master',
+177 silly cache add   type: 'git' }
+178 verbose addRemoteGit caching git+https://git.daplie.com/Daplie/greenlock-express.git#master
+179 silly tryClone cloning git+https://git.daplie.com/Daplie/greenlock-express.git#master via git+https://git.daplie.com/Daplie/greenlock-express.git#master
+180 verbose tryClone git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb not in flight; caching
+181 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes correctMkdir already in flight; waiting
+182 silly cache add parsed spec Result {
+182 silly cache add   raw: 'le-challenge-ddns@git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master',
+182 silly cache add   scope: null,
+182 silly cache add   escapedName: 'le-challenge-ddns',
+182 silly cache add   name: 'le-challenge-ddns',
+182 silly cache add   rawSpec: 'git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master',
+182 silly cache add   spec: 'https://git.daplie.com/Daplie/le-challenge-ddns.git#master',
+182 silly cache add   type: 'git' }
+183 verbose addRemoteGit caching git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master
+184 silly tryClone cloning git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master via git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master
+185 verbose tryClone git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91 not in flight; caching
+186 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes correctMkdir already in flight; waiting
+187 silly cache add parsed spec Result {
+187 silly cache add   raw: 'le-challenge-fs@git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master',
+187 silly cache add   scope: null,
+187 silly cache add   escapedName: 'le-challenge-fs',
+187 silly cache add   name: 'le-challenge-fs',
+187 silly cache add   rawSpec: 'git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master',
+187 silly cache add   spec: 'https://git.daplie.com/Daplie/le-challenge-webroot.git#master',
+187 silly cache add   type: 'git' }
+188 verbose addRemoteGit caching git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master
+189 silly tryClone cloning git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master via git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master
+190 verbose tryClone git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4 not in flight; caching
+191 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes correctMkdir already in flight; waiting
+192 silly cache add parsed spec Result {
+192 silly cache add   raw: 'oauth3-cli@git+https://git.daplie.com/OAuth3/oauth3-cli.git#master',
+192 silly cache add   scope: null,
+192 silly cache add   escapedName: 'oauth3-cli',
+192 silly cache add   name: 'oauth3-cli',
+192 silly cache add   rawSpec: 'git+https://git.daplie.com/OAuth3/oauth3-cli.git#master',
+192 silly cache add   spec: 'https://git.daplie.com/OAuth3/oauth3-cli.git#master',
+192 silly cache add   type: 'git' }
+193 verbose addRemoteGit caching git+https://git.daplie.com/OAuth3/oauth3-cli.git#master
+194 silly tryClone cloning git+https://git.daplie.com/OAuth3/oauth3-cli.git#master via git+https://git.daplie.com/OAuth3/oauth3-cli.git#master
+195 verbose tryClone git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494 not in flight; caching
+196 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes correctMkdir already in flight; waiting
+197 silly cache add parsed spec Result {
+197 silly cache add   raw: 'stunnel@git+https://git.daplie.com/Daplie/node-tunnel-client.git#master',
+197 silly cache add   scope: null,
+197 silly cache add   escapedName: 'stunnel',
+197 silly cache add   name: 'stunnel',
+197 silly cache add   rawSpec: 'git+https://git.daplie.com/Daplie/node-tunnel-client.git#master',
+197 silly cache add   spec: 'https://git.daplie.com/Daplie/node-tunnel-client.git#master',
+197 silly cache add   type: 'git' }
+198 verbose addRemoteGit caching git+https://git.daplie.com/Daplie/node-tunnel-client.git#master
+199 silly tryClone cloning git+https://git.daplie.com/Daplie/node-tunnel-client.git#master via git+https://git.daplie.com/Daplie/node-tunnel-client.git#master
+200 verbose tryClone git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68 not in flight; caching
+201 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes correctMkdir already in flight; waiting
+202 verbose request uri https://registry.npmjs.org/ipify
+203 verbose request no auth needed
+204 info attempt registry request try #1 at 9:12:29 PM
+205 verbose etag W/"c165188695ad2b9e7265cc262d71d672"
+206 verbose lastModified Sun, 27 May 2018 04:56:43 GMT
+207 http request GET https://registry.npmjs.org/ipify
+208 verbose request uri https://registry.npmjs.org/httpolyglot
+209 verbose request no auth needed
+210 info attempt registry request try #1 at 9:12:29 PM
+211 verbose etag W/"5a340c4b5aaba308f9517fc4e85fa351"
+212 verbose lastModified Sun, 27 May 2018 04:05:04 GMT
+213 http request GET https://registry.npmjs.org/httpolyglot
+214 verbose request uri https://registry.npmjs.org/finalhandler
+215 verbose request no auth needed
+216 info attempt registry request try #1 at 9:12:29 PM
+217 verbose etag W/"3cdca137e7dfa9a0f37018a1ea4ff41f"
+218 verbose lastModified Sun, 27 May 2018 00:40:56 GMT
+219 http request GET https://registry.npmjs.org/finalhandler
+220 verbose request uri https://registry.npmjs.org/livereload
+221 verbose request no auth needed
+222 info attempt registry request try #1 at 9:12:29 PM
+223 verbose etag W/"2c950954ba2938891177ab5b821c86a9"
+224 verbose lastModified Sun, 27 May 2018 06:52:53 GMT
+225 http request GET https://registry.npmjs.org/livereload
+226 verbose request uri https://registry.npmjs.org/le-challenge-sni
+227 verbose request no auth needed
+228 info attempt registry request try #1 at 9:12:29 PM
+229 verbose etag W/"9fca9e6d04e5d25dddab22b667210ee1"
+230 verbose lastModified Sun, 27 May 2018 06:32:40 GMT
+231 http request GET https://registry.npmjs.org/le-challenge-sni
+232 verbose request uri https://registry.npmjs.org/minimist
+233 verbose request no auth needed
+234 info attempt registry request try #1 at 9:12:29 PM
+235 verbose etag W/"a0b426a2c90a93be26bd6141b77d1f18"
+236 verbose lastModified Sun, 27 May 2018 08:07:34 GMT
+237 http request GET https://registry.npmjs.org/minimist
+238 verbose request uri https://registry.npmjs.org/localhost.daplie.me-certificates
+239 verbose request no auth needed
+240 info attempt registry request try #1 at 9:12:29 PM
+241 verbose etag W/"6fd2ab3e56c9bdd66f6563140b5c958a"
+242 verbose lastModified Sun, 27 May 2018 06:56:37 GMT
+243 http request GET https://registry.npmjs.org/localhost.daplie.me-certificates
+244 verbose request uri https://registry.npmjs.org/redirect-https
+245 verbose request no auth needed
+246 info attempt registry request try #1 at 9:12:29 PM
+247 verbose etag W/"ab088a15cca599de96fa436d4af4f2db"
+248 verbose lastModified Sun, 27 May 2018 15:32:33 GMT
+249 http request GET https://registry.npmjs.org/redirect-https
+250 verbose request uri https://registry.npmjs.org/proxy-addr
+251 verbose request no auth needed
+252 info attempt registry request try #1 at 9:12:29 PM
+253 verbose etag W/"5cd900f1f60bbdd536602c81ac5fb7b0"
+254 verbose lastModified Sun, 27 May 2018 13:04:15 GMT
+255 http request GET https://registry.npmjs.org/proxy-addr
+256 verbose request uri https://registry.npmjs.org/serve-index
+257 verbose request no auth needed
+258 info attempt registry request try #1 at 9:12:29 PM
+259 verbose etag W/"8892cd8993ee913bf15ad4bbb23655a5"
+260 verbose lastModified Sun, 27 May 2018 17:01:32 GMT
+261 http request GET https://registry.npmjs.org/serve-index
+262 verbose request uri https://registry.npmjs.org/bluebird
+263 verbose request no auth needed
+264 info attempt registry request try #1 at 9:12:29 PM
+265 verbose etag W/"979a3b28b1c5e588298c96aaa3b72a6f"
+266 verbose lastModified Sat, 26 May 2018 02:20:47 GMT
+267 http request GET https://registry.npmjs.org/bluebird
+268 verbose request uri https://registry.npmjs.org/server-destroy
+269 verbose request no auth needed
+270 info attempt registry request try #1 at 9:12:29 PM
+271 verbose etag W/"1fe3c29d2b8c9ee40cb851304a8a5ab3"
+272 verbose lastModified Sun, 27 May 2018 17:01:54 GMT
+273 http request GET https://registry.npmjs.org/server-destroy
+274 verbose request uri https://registry.npmjs.org/serve-static
+275 verbose request no auth needed
+276 info attempt registry request try #1 at 9:12:29 PM
+277 verbose etag W/"e96efc6af71bdc5570b96d6ffeab8635"
+278 verbose lastModified Sun, 27 May 2018 17:01:40 GMT
+279 http request GET https://registry.npmjs.org/serve-static
+280 info git [ 'config', '--get', 'remote.origin.url' ]
+281 info git [ 'config', '--get', 'remote.origin.url' ]
+282 info git [ 'config', '--get', 'remote.origin.url' ]
+283 info git [ 'config', '--get', 'remote.origin.url' ]
+284 info git [ 'config', '--get', 'remote.origin.url' ]
+285 info git [ 'config', '--get', 'remote.origin.url' ]
+286 info git [ 'config', '--get', 'remote.origin.url' ]
+287 info git [ 'config', '--get', 'remote.origin.url' ]
+288 http 304 https://registry.npmjs.org/ipify
+289 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+289 verbose headers   connection: 'keep-alive',
+289 verbose headers   'set-cookie': [ '__cfduid=dd32cc486cb8e89ca408c80dedc5ee9351528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+289 verbose headers   'cache-control': 'max-age=300',
+289 verbose headers   'cf-cache-status': 'HIT',
+289 verbose headers   'cf-ray': '4288ffe89b127a05-SEA',
+289 verbose headers   etag: '"c165188695ad2b9e7265cc262d71d672"',
+289 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+289 verbose headers   'last-modified': 'Sun, 27 May 2018 04:56:43 GMT',
+289 verbose headers   vary: 'accept-encoding, accept',
+289 verbose headers   server: 'cloudflare' }
+290 silly get cb [ 304,
+290 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+290 silly get     connection: 'keep-alive',
+290 silly get     'set-cookie': [ '__cfduid=dd32cc486cb8e89ca408c80dedc5ee9351528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+290 silly get     'cache-control': 'max-age=300',
+290 silly get     'cf-cache-status': 'HIT',
+290 silly get     'cf-ray': '4288ffe89b127a05-SEA',
+290 silly get     etag: '"c165188695ad2b9e7265cc262d71d672"',
+290 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+290 silly get     'last-modified': 'Sun, 27 May 2018 04:56:43 GMT',
+290 silly get     vary: 'accept-encoding, accept',
+290 silly get     server: 'cloudflare' } ]
+291 verbose etag https://registry.npmjs.org/ipify from cache
+292 verbose get saving ipify to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\ipify\.cache.json
+293 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+294 silly resolveWithNewModule ipify@1.1.0 checking installable status
+295 silly cache add args [ 'ipify@^1.1.0', null ]
+296 verbose cache add spec ipify@^1.1.0
+297 silly cache add parsed spec Result {
+297 silly cache add   raw: 'ipify@^1.1.0',
+297 silly cache add   scope: null,
+297 silly cache add   escapedName: 'ipify',
+297 silly cache add   name: 'ipify',
+297 silly cache add   rawSpec: '^1.1.0',
+297 silly cache add   spec: '>=1.1.0 <2.0.0',
+297 silly cache add   type: 'range' }
+298 silly addNamed ipify@>=1.1.0 <2.0.0
+299 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for ipify
+300 silly addNameRange { name: 'ipify', range: '>=1.1.0 <2.0.0', hasData: false }
+301 silly mapToRegistry name ipify
+302 silly mapToRegistry using default registry
+303 silly mapToRegistry registry https://registry.npmjs.org/
+304 silly mapToRegistry data Result {
+304 silly mapToRegistry   raw: 'ipify',
+304 silly mapToRegistry   scope: null,
+304 silly mapToRegistry   escapedName: 'ipify',
+304 silly mapToRegistry   name: 'ipify',
+304 silly mapToRegistry   rawSpec: '',
+304 silly mapToRegistry   spec: 'latest',
+304 silly mapToRegistry   type: 'tag' }
+305 silly mapToRegistry uri https://registry.npmjs.org/ipify
+306 verbose addNameRange registry:https://registry.npmjs.org/ipify not in flight; fetching
+307 verbose get https://registry.npmjs.org/ipify not expired, no request
+308 silly addNameRange number 2 { name: 'ipify', range: '>=1.1.0 <2.0.0', hasData: true }
+309 silly addNameRange versions [ 'ipify',
+309 silly addNameRange   [ '1.0.0',
+309 silly addNameRange     '1.0.1',
+309 silly addNameRange     '1.0.2',
+309 silly addNameRange     '1.0.3',
+309 silly addNameRange     '1.0.4',
+309 silly addNameRange     '1.0.5',
+309 silly addNameRange     '1.1.0',
+309 silly addNameRange     '2.0.0' ] ]
+310 silly addNamed ipify@1.1.0
+311 verbose addNamed "1.1.0" is a plain semver version for ipify
+312 silly cache afterAdd ipify@1.1.0
+313 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\ipify\1.1.0\package\package.json not in flight; writing
+314 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+315 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\ipify\1.1.0\package\package.json written
+316 warn addRemoteGit Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+316 warn addRemoteGit
+316 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+316 warn addRemoteGit     at emitTwo (events.js:106:13)
+316 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+316 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+316 warn addRemoteGit     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+316 warn addRemoteGit  git+https://git.daplie.com/Daplie/node-ddns-client.git#master resetting remote C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266 because of error: { Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+316 warn addRemoteGit
+316 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+316 warn addRemoteGit     at emitTwo (events.js:106:13)
+316 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+316 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+316 warn addRemoteGit     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+316 warn addRemoteGit   killed: false,
+316 warn addRemoteGit   code: 1,
+316 warn addRemoteGit   signal: null,
+316 warn addRemoteGit   cmd: 'git -c core.longpaths=true config --get remote.origin.url' }
+317 info resetRemote resetting C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266 for git+https://git.daplie.com/Daplie/node-ddns-client.git#master
+318 silly gentlyRm C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266 is being purged
+319 verbose gentlyRm don't care about contents; nuking C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266
+320 http 304 https://registry.npmjs.org/finalhandler
+321 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+321 verbose headers   connection: 'keep-alive',
+321 verbose headers   'set-cookie': [ '__cfduid=de1edd035f8186cec78fcdd3e04d8e7361528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+321 verbose headers   'cache-control': 'max-age=300',
+321 verbose headers   'cf-cache-status': 'HIT',
+321 verbose headers   'cf-ray': '4288ffe9397a7955-SEA',
+321 verbose headers   etag: '"3cdca137e7dfa9a0f37018a1ea4ff41f"',
+321 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+321 verbose headers   'last-modified': 'Sun, 27 May 2018 00:40:56 GMT',
+321 verbose headers   vary: 'accept-encoding, accept',
+321 verbose headers   server: 'cloudflare' }
+322 silly get cb [ 304,
+322 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+322 silly get     connection: 'keep-alive',
+322 silly get     'set-cookie': [ '__cfduid=de1edd035f8186cec78fcdd3e04d8e7361528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+322 silly get     'cache-control': 'max-age=300',
+322 silly get     'cf-cache-status': 'HIT',
+322 silly get     'cf-ray': '4288ffe9397a7955-SEA',
+322 silly get     etag: '"3cdca137e7dfa9a0f37018a1ea4ff41f"',
+322 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+322 silly get     'last-modified': 'Sun, 27 May 2018 00:40:56 GMT',
+322 silly get     vary: 'accept-encoding, accept',
+322 silly get     server: 'cloudflare' } ]
+323 verbose etag https://registry.npmjs.org/finalhandler from cache
+324 verbose get saving finalhandler to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\finalhandler\.cache.json
+325 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+326 http 304 https://registry.npmjs.org/livereload
+327 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+327 verbose headers   connection: 'keep-alive',
+327 verbose headers   'set-cookie': [ '__cfduid=dbc001cf4a3f847d8dba78cc8dac99f521528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+327 verbose headers   'cache-control': 'max-age=300',
+327 verbose headers   'cf-cache-status': 'HIT',
+327 verbose headers   'cf-ray': '4288ffe93b537a2f-SEA',
+327 verbose headers   etag: '"2c950954ba2938891177ab5b821c86a9"',
+327 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+327 verbose headers   'last-modified': 'Sun, 27 May 2018 06:52:53 GMT',
+327 verbose headers   vary: 'accept-encoding, accept',
+327 verbose headers   server: 'cloudflare' }
+328 silly get cb [ 304,
+328 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+328 silly get     connection: 'keep-alive',
+328 silly get     'set-cookie': [ '__cfduid=dbc001cf4a3f847d8dba78cc8dac99f521528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+328 silly get     'cache-control': 'max-age=300',
+328 silly get     'cf-cache-status': 'HIT',
+328 silly get     'cf-ray': '4288ffe93b537a2f-SEA',
+328 silly get     etag: '"2c950954ba2938891177ab5b821c86a9"',
+328 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+328 silly get     'last-modified': 'Sun, 27 May 2018 06:52:53 GMT',
+328 silly get     vary: 'accept-encoding, accept',
+328 silly get     server: 'cloudflare' } ]
+329 verbose etag https://registry.npmjs.org/livereload from cache
+330 verbose get saving livereload to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\livereload\.cache.json
+331 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+332 http 304 https://registry.npmjs.org/localhost.daplie.me-certificates
+333 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+333 verbose headers   connection: 'keep-alive',
+333 verbose headers   'set-cookie': [ '__cfduid=dbc001cf4a3f847d8dba78cc8dac99f521528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+333 verbose headers   'cache-control': 'max-age=300',
+333 verbose headers   'cf-cache-status': 'HIT',
+333 verbose headers   'cf-ray': '4288ffe94b647a2f-SEA',
+333 verbose headers   etag: '"6fd2ab3e56c9bdd66f6563140b5c958a"',
+333 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+333 verbose headers   'last-modified': 'Sun, 27 May 2018 06:56:37 GMT',
+333 verbose headers   vary: 'accept-encoding, accept',
+333 verbose headers   server: 'cloudflare' }
+334 silly get cb [ 304,
+334 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+334 silly get     connection: 'keep-alive',
+334 silly get     'set-cookie': [ '__cfduid=dbc001cf4a3f847d8dba78cc8dac99f521528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+334 silly get     'cache-control': 'max-age=300',
+334 silly get     'cf-cache-status': 'HIT',
+334 silly get     'cf-ray': '4288ffe94b647a2f-SEA',
+334 silly get     etag: '"6fd2ab3e56c9bdd66f6563140b5c958a"',
+334 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+334 silly get     'last-modified': 'Sun, 27 May 2018 06:56:37 GMT',
+334 silly get     vary: 'accept-encoding, accept',
+334 silly get     server: 'cloudflare' } ]
+335 verbose etag https://registry.npmjs.org/localhost.daplie.me-certificates from cache
+336 verbose get saving localhost.daplie.me-certificates to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\localhost.daplie.me-certificates\.cache.json
+337 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+338 http 304 https://registry.npmjs.org/minimist
+339 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+339 verbose headers   connection: 'keep-alive',
+339 verbose headers   'set-cookie': [ '__cfduid=dd743fddcbb617e48250955e57263733f1528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+339 verbose headers   'cache-control': 'max-age=300',
+339 verbose headers   'cf-cache-status': 'HIT',
+339 verbose headers   'cf-ray': '4288ffe94a637a0b-SEA',
+339 verbose headers   etag: '"a0b426a2c90a93be26bd6141b77d1f18"',
+339 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+339 verbose headers   'last-modified': 'Sun, 27 May 2018 08:07:34 GMT',
+339 verbose headers   vary: 'accept-encoding, accept',
+339 verbose headers   server: 'cloudflare' }
+340 silly get cb [ 304,
+340 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+340 silly get     connection: 'keep-alive',
+340 silly get     'set-cookie': [ '__cfduid=dd743fddcbb617e48250955e57263733f1528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+340 silly get     'cache-control': 'max-age=300',
+340 silly get     'cf-cache-status': 'HIT',
+340 silly get     'cf-ray': '4288ffe94a637a0b-SEA',
+340 silly get     etag: '"a0b426a2c90a93be26bd6141b77d1f18"',
+340 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+340 silly get     'last-modified': 'Sun, 27 May 2018 08:07:34 GMT',
+340 silly get     vary: 'accept-encoding, accept',
+340 silly get     server: 'cloudflare' } ]
+341 verbose etag https://registry.npmjs.org/minimist from cache
+342 verbose get saving minimist to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\minimist\.cache.json
+343 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+344 http 304 https://registry.npmjs.org/le-challenge-sni
+345 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+345 verbose headers   connection: 'keep-alive',
+345 verbose headers   'set-cookie': [ '__cfduid=dd743fddcbb617e48250955e57263733f1528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+345 verbose headers   'cache-control': 'max-age=300',
+345 verbose headers   'cf-cache-status': 'HIT',
+345 verbose headers   'cf-ray': '4288ffe93a677a0b-SEA',
+345 verbose headers   etag: '"9fca9e6d04e5d25dddab22b667210ee1"',
+345 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+345 verbose headers   'last-modified': 'Sun, 27 May 2018 06:32:40 GMT',
+345 verbose headers   vary: 'accept-encoding, accept',
+345 verbose headers   server: 'cloudflare' }
+346 silly get cb [ 304,
+346 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+346 silly get     connection: 'keep-alive',
+346 silly get     'set-cookie': [ '__cfduid=dd743fddcbb617e48250955e57263733f1528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+346 silly get     'cache-control': 'max-age=300',
+346 silly get     'cf-cache-status': 'HIT',
+346 silly get     'cf-ray': '4288ffe93a677a0b-SEA',
+346 silly get     etag: '"9fca9e6d04e5d25dddab22b667210ee1"',
+346 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+346 silly get     'last-modified': 'Sun, 27 May 2018 06:32:40 GMT',
+346 silly get     vary: 'accept-encoding, accept',
+346 silly get     server: 'cloudflare' } ]
+347 verbose etag https://registry.npmjs.org/le-challenge-sni from cache
+348 verbose get saving le-challenge-sni to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\le-challenge-sni\.cache.json
+349 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+350 http 304 https://registry.npmjs.org/serve-index
+351 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+351 verbose headers   connection: 'keep-alive',
+351 verbose headers   'set-cookie': [ '__cfduid=de1edd035f8186cec78fcdd3e04d8e7361528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+351 verbose headers   'cache-control': 'max-age=300',
+351 verbose headers   'cf-cache-status': 'HIT',
+351 verbose headers   'cf-ray': '4288ffe9598f7955-SEA',
+351 verbose headers   etag: '"8892cd8993ee913bf15ad4bbb23655a5"',
+351 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+351 verbose headers   'last-modified': 'Sun, 27 May 2018 17:01:32 GMT',
+351 verbose headers   vary: 'accept-encoding, accept',
+351 verbose headers   server: 'cloudflare' }
+352 silly get cb [ 304,
+352 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+352 silly get     connection: 'keep-alive',
+352 silly get     'set-cookie': [ '__cfduid=de1edd035f8186cec78fcdd3e04d8e7361528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+352 silly get     'cache-control': 'max-age=300',
+352 silly get     'cf-cache-status': 'HIT',
+352 silly get     'cf-ray': '4288ffe9598f7955-SEA',
+352 silly get     etag: '"8892cd8993ee913bf15ad4bbb23655a5"',
+352 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+352 silly get     'last-modified': 'Sun, 27 May 2018 17:01:32 GMT',
+352 silly get     vary: 'accept-encoding, accept',
+352 silly get     server: 'cloudflare' } ]
+353 verbose etag https://registry.npmjs.org/serve-index from cache
+354 verbose get saving serve-index to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\serve-index\.cache.json
+355 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+356 http 304 https://registry.npmjs.org/httpolyglot
+357 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+357 verbose headers   connection: 'keep-alive',
+357 verbose headers   'set-cookie': [ '__cfduid=de7d6d47d7fbc3a1d693279147f1b82681528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+357 verbose headers   'cache-control': 'max-age=300',
+357 verbose headers   'cf-cache-status': 'HIT',
+357 verbose headers   'cf-ray': '4288ffe92d4e7a11-SEA',
+357 verbose headers   etag: '"5a340c4b5aaba308f9517fc4e85fa351"',
+357 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+357 verbose headers   'last-modified': 'Sun, 27 May 2018 04:05:04 GMT',
+357 verbose headers   vary: 'accept-encoding, accept',
+357 verbose headers   server: 'cloudflare' }
+358 silly get cb [ 304,
+358 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+358 silly get     connection: 'keep-alive',
+358 silly get     'set-cookie': [ '__cfduid=de7d6d47d7fbc3a1d693279147f1b82681528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+358 silly get     'cache-control': 'max-age=300',
+358 silly get     'cf-cache-status': 'HIT',
+358 silly get     'cf-ray': '4288ffe92d4e7a11-SEA',
+358 silly get     etag: '"5a340c4b5aaba308f9517fc4e85fa351"',
+358 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+358 silly get     'last-modified': 'Sun, 27 May 2018 04:05:04 GMT',
+358 silly get     vary: 'accept-encoding, accept',
+358 silly get     server: 'cloudflare' } ]
+359 verbose etag https://registry.npmjs.org/httpolyglot from cache
+360 verbose get saving httpolyglot to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\httpolyglot\.cache.json
+361 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+362 http 304 https://registry.npmjs.org/bluebird
+363 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+363 verbose headers   connection: 'keep-alive',
+363 verbose headers   'set-cookie': [ '__cfduid=de1edd035f8186cec78fcdd3e04d8e7361528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+363 verbose headers   'cache-control': 'max-age=300',
+363 verbose headers   'cf-cache-status': 'HIT',
+363 verbose headers   'cf-ray': '4288ffe959907955-SEA',
+363 verbose headers   etag: '"979a3b28b1c5e588298c96aaa3b72a6f"',
+363 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+363 verbose headers   'last-modified': 'Sat, 26 May 2018 02:20:47 GMT',
+363 verbose headers   vary: 'accept-encoding, accept',
+363 verbose headers   server: 'cloudflare' }
+364 silly get cb [ 304,
+364 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+364 silly get     connection: 'keep-alive',
+364 silly get     'set-cookie': [ '__cfduid=de1edd035f8186cec78fcdd3e04d8e7361528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+364 silly get     'cache-control': 'max-age=300',
+364 silly get     'cf-cache-status': 'HIT',
+364 silly get     'cf-ray': '4288ffe959907955-SEA',
+364 silly get     etag: '"979a3b28b1c5e588298c96aaa3b72a6f"',
+364 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+364 silly get     'last-modified': 'Sat, 26 May 2018 02:20:47 GMT',
+364 silly get     vary: 'accept-encoding, accept',
+364 silly get     server: 'cloudflare' } ]
+365 verbose etag https://registry.npmjs.org/bluebird from cache
+366 verbose get saving bluebird to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\bluebird\.cache.json
+367 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+368 http 304 https://registry.npmjs.org/redirect-https
+369 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+369 verbose headers   connection: 'keep-alive',
+369 verbose headers   'set-cookie': [ '__cfduid=dd743fddcbb617e48250955e57263733f1528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+369 verbose headers   'cache-control': 'max-age=300',
+369 verbose headers   'cf-cache-status': 'HIT',
+369 verbose headers   'cf-ray': '4288ffe94a697a0b-SEA',
+369 verbose headers   etag: '"ab088a15cca599de96fa436d4af4f2db"',
+369 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+369 verbose headers   'last-modified': 'Sun, 27 May 2018 15:32:33 GMT',
+369 verbose headers   vary: 'accept-encoding, accept',
+369 verbose headers   server: 'cloudflare' }
+370 silly get cb [ 304,
+370 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+370 silly get     connection: 'keep-alive',
+370 silly get     'set-cookie': [ '__cfduid=dd743fddcbb617e48250955e57263733f1528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+370 silly get     'cache-control': 'max-age=300',
+370 silly get     'cf-cache-status': 'HIT',
+370 silly get     'cf-ray': '4288ffe94a697a0b-SEA',
+370 silly get     etag: '"ab088a15cca599de96fa436d4af4f2db"',
+370 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+370 silly get     'last-modified': 'Sun, 27 May 2018 15:32:33 GMT',
+370 silly get     vary: 'accept-encoding, accept',
+370 silly get     server: 'cloudflare' } ]
+371 verbose etag https://registry.npmjs.org/redirect-https from cache
+372 verbose get saving redirect-https to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\redirect-https\.cache.json
+373 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+374 http 304 https://registry.npmjs.org/server-destroy
+375 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+375 verbose headers   connection: 'keep-alive',
+375 verbose headers   'set-cookie': [ '__cfduid=dbc001cf4a3f847d8dba78cc8dac99f521528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+375 verbose headers   'cache-control': 'max-age=300',
+375 verbose headers   'cf-cache-status': 'HIT',
+375 verbose headers   'cf-ray': '4288ffe95b837a2f-SEA',
+375 verbose headers   etag: '"1fe3c29d2b8c9ee40cb851304a8a5ab3"',
+375 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+375 verbose headers   'last-modified': 'Sun, 27 May 2018 17:01:54 GMT',
+375 verbose headers   vary: 'accept-encoding, accept',
+375 verbose headers   server: 'cloudflare' }
+376 silly get cb [ 304,
+376 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+376 silly get     connection: 'keep-alive',
+376 silly get     'set-cookie': [ '__cfduid=dbc001cf4a3f847d8dba78cc8dac99f521528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+376 silly get     'cache-control': 'max-age=300',
+376 silly get     'cf-cache-status': 'HIT',
+376 silly get     'cf-ray': '4288ffe95b837a2f-SEA',
+376 silly get     etag: '"1fe3c29d2b8c9ee40cb851304a8a5ab3"',
+376 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+376 silly get     'last-modified': 'Sun, 27 May 2018 17:01:54 GMT',
+376 silly get     vary: 'accept-encoding, accept',
+376 silly get     server: 'cloudflare' } ]
+377 verbose etag https://registry.npmjs.org/server-destroy from cache
+378 verbose get saving server-destroy to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\server-destroy\.cache.json
+379 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+380 http 304 https://registry.npmjs.org/serve-static
+381 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+381 verbose headers   connection: 'keep-alive',
+381 verbose headers   'set-cookie': [ '__cfduid=de7d6d47d7fbc3a1d693279147f1b82681528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+381 verbose headers   'cache-control': 'max-age=300',
+381 verbose headers   'cf-cache-status': 'HIT',
+381 verbose headers   'cf-ray': '4288ffe96d6b7a11-SEA',
+381 verbose headers   etag: '"e96efc6af71bdc5570b96d6ffeab8635"',
+381 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+381 verbose headers   'last-modified': 'Sun, 27 May 2018 17:01:40 GMT',
+381 verbose headers   vary: 'accept-encoding, accept',
+381 verbose headers   server: 'cloudflare' }
+382 silly get cb [ 304,
+382 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+382 silly get     connection: 'keep-alive',
+382 silly get     'set-cookie': [ '__cfduid=de7d6d47d7fbc3a1d693279147f1b82681528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+382 silly get     'cache-control': 'max-age=300',
+382 silly get     'cf-cache-status': 'HIT',
+382 silly get     'cf-ray': '4288ffe96d6b7a11-SEA',
+382 silly get     etag: '"e96efc6af71bdc5570b96d6ffeab8635"',
+382 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+382 silly get     'last-modified': 'Sun, 27 May 2018 17:01:40 GMT',
+382 silly get     vary: 'accept-encoding, accept',
+382 silly get     server: 'cloudflare' } ]
+383 verbose etag https://registry.npmjs.org/serve-static from cache
+384 verbose get saving serve-static to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\serve-static\.cache.json
+385 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+386 silly vacuum-fs purging C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266
+387 warn addRemoteGit Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+387 warn addRemoteGit
+387 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+387 warn addRemoteGit     at emitTwo (events.js:106:13)
+387 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+387 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+387 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+387 warn addRemoteGit     at emitOne (events.js:96:13)
+387 warn addRemoteGit     at Socket.emit (events.js:188:7)
+387 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+387 warn addRemoteGit  git+https://git.daplie.com/Daplie/greenlock-express.git#master resetting remote C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb because of error: { Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+387 warn addRemoteGit
+387 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+387 warn addRemoteGit     at emitTwo (events.js:106:13)
+387 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+387 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+387 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+387 warn addRemoteGit     at emitOne (events.js:96:13)
+387 warn addRemoteGit     at Socket.emit (events.js:188:7)
+387 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+387 warn addRemoteGit   killed: false,
+387 warn addRemoteGit   code: 1,
+387 warn addRemoteGit   signal: null,
+387 warn addRemoteGit   cmd: 'git -c core.longpaths=true config --get remote.origin.url' }
+388 info resetRemote resetting C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb for git+https://git.daplie.com/Daplie/greenlock-express.git#master
+389 silly gentlyRm C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb is being purged
+390 verbose gentlyRm don't care about contents; nuking C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb
+391 warn addRemoteGit Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+391 warn addRemoteGit
+391 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+391 warn addRemoteGit     at emitTwo (events.js:106:13)
+391 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+391 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+391 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+391 warn addRemoteGit     at emitOne (events.js:96:13)
+391 warn addRemoteGit     at Socket.emit (events.js:188:7)
+391 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+391 warn addRemoteGit  git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master resetting remote C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4 because of error: { Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+391 warn addRemoteGit
+391 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+391 warn addRemoteGit     at emitTwo (events.js:106:13)
+391 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+391 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+391 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+391 warn addRemoteGit     at emitOne (events.js:96:13)
+391 warn addRemoteGit     at Socket.emit (events.js:188:7)
+391 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+391 warn addRemoteGit   killed: false,
+391 warn addRemoteGit   code: 1,
+391 warn addRemoteGit   signal: null,
+391 warn addRemoteGit   cmd: 'git -c core.longpaths=true config --get remote.origin.url' }
+392 info resetRemote resetting C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4 for git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master
+393 silly gentlyRm C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4 is being purged
+394 verbose gentlyRm don't care about contents; nuking C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4
+395 warn addRemoteGit Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+395 warn addRemoteGit
+395 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+395 warn addRemoteGit     at emitTwo (events.js:106:13)
+395 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+395 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+395 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+395 warn addRemoteGit     at emitOne (events.js:96:13)
+395 warn addRemoteGit     at Socket.emit (events.js:188:7)
+395 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+395 warn addRemoteGit  git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master resetting remote C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b because of error: { Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+395 warn addRemoteGit
+395 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+395 warn addRemoteGit     at emitTwo (events.js:106:13)
+395 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+395 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+395 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+395 warn addRemoteGit     at emitOne (events.js:96:13)
+395 warn addRemoteGit     at Socket.emit (events.js:188:7)
+395 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+395 warn addRemoteGit   killed: false,
+395 warn addRemoteGit   code: 1,
+395 warn addRemoteGit   signal: null,
+395 warn addRemoteGit   cmd: 'git -c core.longpaths=true config --get remote.origin.url' }
+396 info resetRemote resetting C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b for git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master
+397 silly gentlyRm C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b is being purged
+398 verbose gentlyRm don't care about contents; nuking C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b
+399 warn addRemoteGit Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+399 warn addRemoteGit
+399 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+399 warn addRemoteGit     at emitTwo (events.js:106:13)
+399 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+399 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+399 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+399 warn addRemoteGit     at emitOne (events.js:96:13)
+399 warn addRemoteGit     at Socket.emit (events.js:188:7)
+399 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+399 warn addRemoteGit  git+https://git.daplie.com/Daplie/node-greenlock.git#master resetting remote C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1 because of error: { Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+399 warn addRemoteGit
+399 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+399 warn addRemoteGit     at emitTwo (events.js:106:13)
+399 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+399 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+399 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+399 warn addRemoteGit     at emitOne (events.js:96:13)
+399 warn addRemoteGit     at Socket.emit (events.js:188:7)
+399 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+399 warn addRemoteGit   killed: false,
+399 warn addRemoteGit   code: 1,
+399 warn addRemoteGit   signal: null,
+399 warn addRemoteGit   cmd: 'git -c core.longpaths=true config --get remote.origin.url' }
+400 info resetRemote resetting C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1 for git+https://git.daplie.com/Daplie/node-greenlock.git#master
+401 silly gentlyRm C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1 is being purged
+402 verbose gentlyRm don't care about contents; nuking C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1
+403 warn addRemoteGit Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+403 warn addRemoteGit
+403 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+403 warn addRemoteGit     at emitTwo (events.js:106:13)
+403 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+403 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+403 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+403 warn addRemoteGit     at emitOne (events.js:96:13)
+403 warn addRemoteGit     at Socket.emit (events.js:188:7)
+403 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+403 warn addRemoteGit  git+https://git.daplie.com/OAuth3/oauth3-cli.git#master resetting remote C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494 because of error: { Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+403 warn addRemoteGit
+403 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+403 warn addRemoteGit     at emitTwo (events.js:106:13)
+403 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+403 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+403 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+403 warn addRemoteGit     at emitOne (events.js:96:13)
+403 warn addRemoteGit     at Socket.emit (events.js:188:7)
+403 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+403 warn addRemoteGit   killed: false,
+403 warn addRemoteGit   code: 1,
+403 warn addRemoteGit   signal: null,
+403 warn addRemoteGit   cmd: 'git -c core.longpaths=true config --get remote.origin.url' }
+404 info resetRemote resetting C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494 for git+https://git.daplie.com/OAuth3/oauth3-cli.git#master
+405 silly gentlyRm C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494 is being purged
+406 verbose gentlyRm don't care about contents; nuking C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494
+407 warn addRemoteGit Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+407 warn addRemoteGit
+407 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+407 warn addRemoteGit     at emitTwo (events.js:106:13)
+407 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+407 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+407 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+407 warn addRemoteGit     at emitOne (events.js:96:13)
+407 warn addRemoteGit     at Socket.emit (events.js:188:7)
+407 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+407 warn addRemoteGit  git+https://git.daplie.com/Daplie/node-tunnel-client.git#master resetting remote C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68 because of error: { Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+407 warn addRemoteGit
+407 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+407 warn addRemoteGit     at emitTwo (events.js:106:13)
+407 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+407 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+407 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+407 warn addRemoteGit     at emitOne (events.js:96:13)
+407 warn addRemoteGit     at Socket.emit (events.js:188:7)
+407 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+407 warn addRemoteGit   killed: false,
+407 warn addRemoteGit   code: 1,
+407 warn addRemoteGit   signal: null,
+407 warn addRemoteGit   cmd: 'git -c core.longpaths=true config --get remote.origin.url' }
+408 info resetRemote resetting C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68 for git+https://git.daplie.com/Daplie/node-tunnel-client.git#master
+409 silly gentlyRm C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68 is being purged
+410 verbose gentlyRm don't care about contents; nuking C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68
+411 warn addRemoteGit Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+411 warn addRemoteGit
+411 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+411 warn addRemoteGit     at emitTwo (events.js:106:13)
+411 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+411 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+411 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+411 warn addRemoteGit     at emitOne (events.js:96:13)
+411 warn addRemoteGit     at Socket.emit (events.js:188:7)
+411 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+411 warn addRemoteGit  git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master resetting remote C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91 because of error: { Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+411 warn addRemoteGit
+411 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:206:12)
+411 warn addRemoteGit     at emitTwo (events.js:106:13)
+411 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+411 warn addRemoteGit     at maybeClose (internal/child_process.js:877:16)
+411 warn addRemoteGit     at Socket.<anonymous> (internal/child_process.js:334:11)
+411 warn addRemoteGit     at emitOne (events.js:96:13)
+411 warn addRemoteGit     at Socket.emit (events.js:188:7)
+411 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:498:12)
+411 warn addRemoteGit   killed: false,
+411 warn addRemoteGit   code: 1,
+411 warn addRemoteGit   signal: null,
+411 warn addRemoteGit   cmd: 'git -c core.longpaths=true config --get remote.origin.url' }
+412 info resetRemote resetting C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91 for git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master
+413 silly gentlyRm C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91 is being purged
+414 verbose gentlyRm don't care about contents; nuking C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91
+415 http 304 https://registry.npmjs.org/proxy-addr
+416 verbose headers { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+416 verbose headers   connection: 'keep-alive',
+416 verbose headers   'set-cookie': [ '__cfduid=dc1b861c8a3fd6484730ffe1e7b3680561528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+416 verbose headers   'cache-control': 'max-age=300',
+416 verbose headers   'cf-cache-status': 'HIT',
+416 verbose headers   'cf-ray': '4288ffe94c3779ff-SEA',
+416 verbose headers   etag: '"5cd900f1f60bbdd536602c81ac5fb7b0"',
+416 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+416 verbose headers   'last-modified': 'Sun, 27 May 2018 13:04:15 GMT',
+416 verbose headers   vary: 'accept-encoding, accept',
+416 verbose headers   server: 'cloudflare' }
+417 silly get cb [ 304,
+417 silly get   { date: 'Sun, 10 Jun 2018 04:12:26 GMT',
+417 silly get     connection: 'keep-alive',
+417 silly get     'set-cookie': [ '__cfduid=dc1b861c8a3fd6484730ffe1e7b3680561528603946; expires=Mon, 10-Jun-19 04:12:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+417 silly get     'cache-control': 'max-age=300',
+417 silly get     'cf-cache-status': 'HIT',
+417 silly get     'cf-ray': '4288ffe94c3779ff-SEA',
+417 silly get     etag: '"5cd900f1f60bbdd536602c81ac5fb7b0"',
+417 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+417 silly get     'last-modified': 'Sun, 27 May 2018 13:04:15 GMT',
+417 silly get     vary: 'accept-encoding, accept',
+417 silly get     server: 'cloudflare' } ]
+418 verbose etag https://registry.npmjs.org/proxy-addr from cache
+419 verbose get saving proxy-addr to C:\Users\Seanna\AppData\Roaming\npm-cache\registry.npmjs.org\proxy-addr\.cache.json
+420 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+421 silly vacuum-fs purging C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb
+422 silly vacuum-fs purging C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4
+423 silly vacuum-fs purging C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b
+424 silly vacuum-fs purging C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1
+425 silly vacuum-fs purging C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494
+426 silly vacuum-fs purging C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68
+427 silly vacuum-fs purging C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91
+428 silly vacuum-fs quitting because other entries in C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes
+429 silly vacuum-fs quitting because other entries in C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes
+430 silly vacuum-fs quitting because other entries in C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes
+431 silly vacuum-fs quitting because other entries in C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes
+432 silly vacuum-fs quitting because other entries in C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes
+433 silly vacuum-fs quitting because other entries in C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes
+434 silly vacuum-fs quitting because other entries in C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes
+435 silly vacuum-fs quitting because other entries in C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes
+436 silly resolveWithNewModule finalhandler@0.4.1 checking installable status
+437 silly cache add args [ 'finalhandler@^0.4.0', null ]
+438 verbose cache add spec finalhandler@^0.4.0
+439 silly cache add parsed spec Result {
+439 silly cache add   raw: 'finalhandler@^0.4.0',
+439 silly cache add   scope: null,
+439 silly cache add   escapedName: 'finalhandler',
+439 silly cache add   name: 'finalhandler',
+439 silly cache add   rawSpec: '^0.4.0',
+439 silly cache add   spec: '>=0.4.0 <0.5.0',
+439 silly cache add   type: 'range' }
+440 silly addNamed finalhandler@>=0.4.0 <0.5.0
+441 verbose addNamed ">=0.4.0 <0.5.0" is a valid semver range for finalhandler
+442 silly addNameRange { name: 'finalhandler', range: '>=0.4.0 <0.5.0', hasData: false }
+443 silly mapToRegistry name finalhandler
+444 silly mapToRegistry using default registry
+445 silly mapToRegistry registry https://registry.npmjs.org/
+446 silly mapToRegistry data Result {
+446 silly mapToRegistry   raw: 'finalhandler',
+446 silly mapToRegistry   scope: null,
+446 silly mapToRegistry   escapedName: 'finalhandler',
+446 silly mapToRegistry   name: 'finalhandler',
+446 silly mapToRegistry   rawSpec: '',
+446 silly mapToRegistry   spec: 'latest',
+446 silly mapToRegistry   type: 'tag' }
+447 silly mapToRegistry uri https://registry.npmjs.org/finalhandler
+448 verbose addNameRange registry:https://registry.npmjs.org/finalhandler not in flight; fetching
+449 silly resolveWithNewModule livereload@0.6.3 checking installable status
+450 silly cache add args [ 'livereload@^0.6.0', null ]
+451 verbose cache add spec livereload@^0.6.0
+452 silly cache add parsed spec Result {
+452 silly cache add   raw: 'livereload@^0.6.0',
+452 silly cache add   scope: null,
+452 silly cache add   escapedName: 'livereload',
+452 silly cache add   name: 'livereload',
+452 silly cache add   rawSpec: '^0.6.0',
+452 silly cache add   spec: '>=0.6.0 <0.7.0',
+452 silly cache add   type: 'range' }
+453 silly addNamed livereload@>=0.6.0 <0.7.0
+454 verbose addNamed ">=0.6.0 <0.7.0" is a valid semver range for livereload
+455 silly addNameRange { name: 'livereload', range: '>=0.6.0 <0.7.0', hasData: false }
+456 silly mapToRegistry name livereload
+457 silly mapToRegistry using default registry
+458 silly mapToRegistry registry https://registry.npmjs.org/
+459 silly mapToRegistry data Result {
+459 silly mapToRegistry   raw: 'livereload',
+459 silly mapToRegistry   scope: null,
+459 silly mapToRegistry   escapedName: 'livereload',
+459 silly mapToRegistry   name: 'livereload',
+459 silly mapToRegistry   rawSpec: '',
+459 silly mapToRegistry   spec: 'latest',
+459 silly mapToRegistry   type: 'tag' }
+460 silly mapToRegistry uri https://registry.npmjs.org/livereload
+461 verbose addNameRange registry:https://registry.npmjs.org/livereload not in flight; fetching
+462 silly resolveWithNewModule le-challenge-sni@2.0.1 checking installable status
+463 silly cache add args [ 'le-challenge-sni@^2.0.1', null ]
+464 verbose cache add spec le-challenge-sni@^2.0.1
+465 silly cache add parsed spec Result {
+465 silly cache add   raw: 'le-challenge-sni@^2.0.1',
+465 silly cache add   scope: null,
+465 silly cache add   escapedName: 'le-challenge-sni',
+465 silly cache add   name: 'le-challenge-sni',
+465 silly cache add   rawSpec: '^2.0.1',
+465 silly cache add   spec: '>=2.0.1 <3.0.0',
+465 silly cache add   type: 'range' }
+466 silly addNamed le-challenge-sni@>=2.0.1 <3.0.0
+467 verbose addNamed ">=2.0.1 <3.0.0" is a valid semver range for le-challenge-sni
+468 silly addNameRange { name: 'le-challenge-sni',
+468 silly addNameRange   range: '>=2.0.1 <3.0.0',
+468 silly addNameRange   hasData: false }
+469 silly mapToRegistry name le-challenge-sni
+470 silly mapToRegistry using default registry
+471 silly mapToRegistry registry https://registry.npmjs.org/
+472 silly mapToRegistry data Result {
+472 silly mapToRegistry   raw: 'le-challenge-sni',
+472 silly mapToRegistry   scope: null,
+472 silly mapToRegistry   escapedName: 'le-challenge-sni',
+472 silly mapToRegistry   name: 'le-challenge-sni',
+472 silly mapToRegistry   rawSpec: '',
+472 silly mapToRegistry   spec: 'latest',
+472 silly mapToRegistry   type: 'tag' }
+473 silly mapToRegistry uri https://registry.npmjs.org/le-challenge-sni
+474 verbose addNameRange registry:https://registry.npmjs.org/le-challenge-sni not in flight; fetching
+475 silly resolveWithNewModule httpolyglot@0.1.2 checking installable status
+476 silly cache add args [ 'httpolyglot@^0.1.1', null ]
+477 verbose cache add spec httpolyglot@^0.1.1
+478 silly cache add parsed spec Result {
+478 silly cache add   raw: 'httpolyglot@^0.1.1',
+478 silly cache add   scope: null,
+478 silly cache add   escapedName: 'httpolyglot',
+478 silly cache add   name: 'httpolyglot',
+478 silly cache add   rawSpec: '^0.1.1',
+478 silly cache add   spec: '>=0.1.1 <0.2.0',
+478 silly cache add   type: 'range' }
+479 silly addNamed httpolyglot@>=0.1.1 <0.2.0
+480 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for httpolyglot
+481 silly addNameRange { name: 'httpolyglot', range: '>=0.1.1 <0.2.0', hasData: false }
+482 silly mapToRegistry name httpolyglot
+483 silly mapToRegistry using default registry
+484 silly mapToRegistry registry https://registry.npmjs.org/
+485 silly mapToRegistry data Result {
+485 silly mapToRegistry   raw: 'httpolyglot',
+485 silly mapToRegistry   scope: null,
+485 silly mapToRegistry   escapedName: 'httpolyglot',
+485 silly mapToRegistry   name: 'httpolyglot',
+485 silly mapToRegistry   rawSpec: '',
+485 silly mapToRegistry   spec: 'latest',
+485 silly mapToRegistry   type: 'tag' }
+486 silly mapToRegistry uri https://registry.npmjs.org/httpolyglot
+487 verbose addNameRange registry:https://registry.npmjs.org/httpolyglot not in flight; fetching
+488 silly resolveWithNewModule serve-index@1.9.1 checking installable status
+489 silly cache add args [ 'serve-index@^1.7.0', null ]
+490 verbose cache add spec serve-index@^1.7.0
+491 silly cache add parsed spec Result {
+491 silly cache add   raw: 'serve-index@^1.7.0',
+491 silly cache add   scope: null,
+491 silly cache add   escapedName: 'serve-index',
+491 silly cache add   name: 'serve-index',
+491 silly cache add   rawSpec: '^1.7.0',
+491 silly cache add   spec: '>=1.7.0 <2.0.0',
+491 silly cache add   type: 'range' }
+492 silly addNamed serve-index@>=1.7.0 <2.0.0
+493 verbose addNamed ">=1.7.0 <2.0.0" is a valid semver range for serve-index
+494 silly addNameRange { name: 'serve-index', range: '>=1.7.0 <2.0.0', hasData: false }
+495 silly mapToRegistry name serve-index
+496 silly mapToRegistry using default registry
+497 silly mapToRegistry registry https://registry.npmjs.org/
+498 silly mapToRegistry data Result {
+498 silly mapToRegistry   raw: 'serve-index',
+498 silly mapToRegistry   scope: null,
+498 silly mapToRegistry   escapedName: 'serve-index',
+498 silly mapToRegistry   name: 'serve-index',
+498 silly mapToRegistry   rawSpec: '',
+498 silly mapToRegistry   spec: 'latest',
+498 silly mapToRegistry   type: 'tag' }
+499 silly mapToRegistry uri https://registry.npmjs.org/serve-index
+500 verbose addNameRange registry:https://registry.npmjs.org/serve-index not in flight; fetching
+501 silly resolveWithNewModule server-destroy@1.0.1 checking installable status
+502 silly cache add args [ 'server-destroy@^1.0.1', null ]
+503 verbose cache add spec server-destroy@^1.0.1
+504 silly cache add parsed spec Result {
+504 silly cache add   raw: 'server-destroy@^1.0.1',
+504 silly cache add   scope: null,
+504 silly cache add   escapedName: 'server-destroy',
+504 silly cache add   name: 'server-destroy',
+504 silly cache add   rawSpec: '^1.0.1',
+504 silly cache add   spec: '>=1.0.1 <2.0.0',
+504 silly cache add   type: 'range' }
+505 silly addNamed server-destroy@>=1.0.1 <2.0.0
+506 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for server-destroy
+507 silly addNameRange { name: 'server-destroy',
+507 silly addNameRange   range: '>=1.0.1 <2.0.0',
+507 silly addNameRange   hasData: false }
+508 silly mapToRegistry name server-destroy
+509 silly mapToRegistry using default registry
+510 silly mapToRegistry registry https://registry.npmjs.org/
+511 silly mapToRegistry data Result {
+511 silly mapToRegistry   raw: 'server-destroy',
+511 silly mapToRegistry   scope: null,
+511 silly mapToRegistry   escapedName: 'server-destroy',
+511 silly mapToRegistry   name: 'server-destroy',
+511 silly mapToRegistry   rawSpec: '',
+511 silly mapToRegistry   spec: 'latest',
+511 silly mapToRegistry   type: 'tag' }
+512 silly mapToRegistry uri https://registry.npmjs.org/server-destroy
+513 verbose addNameRange registry:https://registry.npmjs.org/server-destroy not in flight; fetching
+514 silly resolveWithNewModule localhost.daplie.me-certificates@1.3.5 checking installable status
+515 silly cache add args [ 'localhost.daplie.me-certificates@^1.3.0', null ]
+516 verbose cache add spec localhost.daplie.me-certificates@^1.3.0
+517 silly cache add parsed spec Result {
+517 silly cache add   raw: 'localhost.daplie.me-certificates@^1.3.0',
+517 silly cache add   scope: null,
+517 silly cache add   escapedName: 'localhost.daplie.me-certificates',
+517 silly cache add   name: 'localhost.daplie.me-certificates',
+517 silly cache add   rawSpec: '^1.3.0',
+517 silly cache add   spec: '>=1.3.0 <2.0.0',
+517 silly cache add   type: 'range' }
+518 silly addNamed localhost.daplie.me-certificates@>=1.3.0 <2.0.0
+519 verbose addNamed ">=1.3.0 <2.0.0" is a valid semver range for localhost.daplie.me-certificates
+520 silly addNameRange { name: 'localhost.daplie.me-certificates',
+520 silly addNameRange   range: '>=1.3.0 <2.0.0',
+520 silly addNameRange   hasData: false }
+521 silly mapToRegistry name localhost.daplie.me-certificates
+522 silly mapToRegistry using default registry
+523 silly mapToRegistry registry https://registry.npmjs.org/
+524 silly mapToRegistry data Result {
+524 silly mapToRegistry   raw: 'localhost.daplie.me-certificates',
+524 silly mapToRegistry   scope: null,
+524 silly mapToRegistry   escapedName: 'localhost.daplie.me-certificates',
+524 silly mapToRegistry   name: 'localhost.daplie.me-certificates',
+524 silly mapToRegistry   rawSpec: '',
+524 silly mapToRegistry   spec: 'latest',
+524 silly mapToRegistry   type: 'tag' }
+525 silly mapToRegistry uri https://registry.npmjs.org/localhost.daplie.me-certificates
+526 verbose addNameRange registry:https://registry.npmjs.org/localhost.daplie.me-certificates not in flight; fetching
+527 silly resolveWithNewModule minimist@1.2.0 checking installable status
+528 silly cache add args [ 'minimist@^1.1.1', null ]
+529 verbose cache add spec minimist@^1.1.1
+530 silly cache add parsed spec Result {
+530 silly cache add   raw: 'minimist@^1.1.1',
+530 silly cache add   scope: null,
+530 silly cache add   escapedName: 'minimist',
+530 silly cache add   name: 'minimist',
+530 silly cache add   rawSpec: '^1.1.1',
+530 silly cache add   spec: '>=1.1.1 <2.0.0',
+530 silly cache add   type: 'range' }
+531 silly addNamed minimist@>=1.1.1 <2.0.0
+532 verbose addNamed ">=1.1.1 <2.0.0" is a valid semver range for minimist
+533 silly addNameRange { name: 'minimist', range: '>=1.1.1 <2.0.0', hasData: false }
+534 silly mapToRegistry name minimist
+535 silly mapToRegistry using default registry
+536 silly mapToRegistry registry https://registry.npmjs.org/
+537 silly mapToRegistry data Result {
+537 silly mapToRegistry   raw: 'minimist',
+537 silly mapToRegistry   scope: null,
+537 silly mapToRegistry   escapedName: 'minimist',
+537 silly mapToRegistry   name: 'minimist',
+537 silly mapToRegistry   rawSpec: '',
+537 silly mapToRegistry   spec: 'latest',
+537 silly mapToRegistry   type: 'tag' }
+538 silly mapToRegistry uri https://registry.npmjs.org/minimist
+539 verbose addNameRange registry:https://registry.npmjs.org/minimist not in flight; fetching
+540 silly resolveWithNewModule serve-static@1.13.2 checking installable status
+541 silly cache add args [ 'serve-static@^1.10.0', null ]
+542 verbose cache add spec serve-static@^1.10.0
+543 silly cache add parsed spec Result {
+543 silly cache add   raw: 'serve-static@^1.10.0',
+543 silly cache add   scope: null,
+543 silly cache add   escapedName: 'serve-static',
+543 silly cache add   name: 'serve-static',
+543 silly cache add   rawSpec: '^1.10.0',
+543 silly cache add   spec: '>=1.10.0 <2.0.0',
+543 silly cache add   type: 'range' }
+544 silly addNamed serve-static@>=1.10.0 <2.0.0
+545 verbose addNamed ">=1.10.0 <2.0.0" is a valid semver range for serve-static
+546 silly addNameRange { name: 'serve-static',
+546 silly addNameRange   range: '>=1.10.0 <2.0.0',
+546 silly addNameRange   hasData: false }
+547 silly mapToRegistry name serve-static
+548 silly mapToRegistry using default registry
+549 silly mapToRegistry registry https://registry.npmjs.org/
+550 silly mapToRegistry data Result {
+550 silly mapToRegistry   raw: 'serve-static',
+550 silly mapToRegistry   scope: null,
+550 silly mapToRegistry   escapedName: 'serve-static',
+550 silly mapToRegistry   name: 'serve-static',
+550 silly mapToRegistry   rawSpec: '',
+550 silly mapToRegistry   spec: 'latest',
+550 silly mapToRegistry   type: 'tag' }
+551 silly mapToRegistry uri https://registry.npmjs.org/serve-static
+552 verbose addNameRange registry:https://registry.npmjs.org/serve-static not in flight; fetching
+553 silly resolveWithNewModule bluebird@3.5.1 checking installable status
+554 silly cache add args [ 'bluebird@^3.4.6', null ]
+555 verbose cache add spec bluebird@^3.4.6
+556 silly cache add parsed spec Result {
+556 silly cache add   raw: 'bluebird@^3.4.6',
+556 silly cache add   scope: null,
+556 silly cache add   escapedName: 'bluebird',
+556 silly cache add   name: 'bluebird',
+556 silly cache add   rawSpec: '^3.4.6',
+556 silly cache add   spec: '>=3.4.6 <4.0.0',
+556 silly cache add   type: 'range' }
+557 silly addNamed bluebird@>=3.4.6 <4.0.0
+558 verbose addNamed ">=3.4.6 <4.0.0" is a valid semver range for bluebird
+559 silly addNameRange { name: 'bluebird', range: '>=3.4.6 <4.0.0', hasData: false }
+560 silly mapToRegistry name bluebird
+561 silly mapToRegistry using default registry
+562 silly mapToRegistry registry https://registry.npmjs.org/
+563 silly mapToRegistry data Result {
+563 silly mapToRegistry   raw: 'bluebird',
+563 silly mapToRegistry   scope: null,
+563 silly mapToRegistry   escapedName: 'bluebird',
+563 silly mapToRegistry   name: 'bluebird',
+563 silly mapToRegistry   rawSpec: '',
+563 silly mapToRegistry   spec: 'latest',
+563 silly mapToRegistry   type: 'tag' }
+564 silly mapToRegistry uri https://registry.npmjs.org/bluebird
+565 verbose addNameRange registry:https://registry.npmjs.org/bluebird not in flight; fetching
+566 silly resolveWithNewModule proxy-addr@1.1.5 checking installable status
+567 silly cache add args [ 'proxy-addr@^1.1.4', null ]
+568 verbose cache add spec proxy-addr@^1.1.4
+569 silly cache add parsed spec Result {
+569 silly cache add   raw: 'proxy-addr@^1.1.4',
+569 silly cache add   scope: null,
+569 silly cache add   escapedName: 'proxy-addr',
+569 silly cache add   name: 'proxy-addr',
+569 silly cache add   rawSpec: '^1.1.4',
+569 silly cache add   spec: '>=1.1.4 <2.0.0',
+569 silly cache add   type: 'range' }
+570 silly addNamed proxy-addr@>=1.1.4 <2.0.0
+571 verbose addNamed ">=1.1.4 <2.0.0" is a valid semver range for proxy-addr
+572 silly addNameRange { name: 'proxy-addr', range: '>=1.1.4 <2.0.0', hasData: false }
+573 silly mapToRegistry name proxy-addr
+574 silly mapToRegistry using default registry
+575 silly mapToRegistry registry https://registry.npmjs.org/
+576 silly mapToRegistry data Result {
+576 silly mapToRegistry   raw: 'proxy-addr',
+576 silly mapToRegistry   scope: null,
+576 silly mapToRegistry   escapedName: 'proxy-addr',
+576 silly mapToRegistry   name: 'proxy-addr',
+576 silly mapToRegistry   rawSpec: '',
+576 silly mapToRegistry   spec: 'latest',
+576 silly mapToRegistry   type: 'tag' }
+577 silly mapToRegistry uri https://registry.npmjs.org/proxy-addr
+578 verbose addNameRange registry:https://registry.npmjs.org/proxy-addr not in flight; fetching
+579 silly resolveWithNewModule redirect-https@1.1.5 checking installable status
+580 silly cache add args [ 'redirect-https@^1.1.0', null ]
+581 verbose cache add spec redirect-https@^1.1.0
+582 silly cache add parsed spec Result {
+582 silly cache add   raw: 'redirect-https@^1.1.0',
+582 silly cache add   scope: null,
+582 silly cache add   escapedName: 'redirect-https',
+582 silly cache add   name: 'redirect-https',
+582 silly cache add   rawSpec: '^1.1.0',
+582 silly cache add   spec: '>=1.1.0 <2.0.0',
+582 silly cache add   type: 'range' }
+583 silly addNamed redirect-https@>=1.1.0 <2.0.0
+584 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for redirect-https
+585 silly addNameRange { name: 'redirect-https',
+585 silly addNameRange   range: '>=1.1.0 <2.0.0',
+585 silly addNameRange   hasData: false }
+586 silly mapToRegistry name redirect-https
+587 silly mapToRegistry using default registry
+588 silly mapToRegistry registry https://registry.npmjs.org/
+589 silly mapToRegistry data Result {
+589 silly mapToRegistry   raw: 'redirect-https',
+589 silly mapToRegistry   scope: null,
+589 silly mapToRegistry   escapedName: 'redirect-https',
+589 silly mapToRegistry   name: 'redirect-https',
+589 silly mapToRegistry   rawSpec: '',
+589 silly mapToRegistry   spec: 'latest',
+589 silly mapToRegistry   type: 'tag' }
+590 silly mapToRegistry uri https://registry.npmjs.org/redirect-https
+591 verbose addNameRange registry:https://registry.npmjs.org/redirect-https not in flight; fetching
+592 verbose get https://registry.npmjs.org/finalhandler not expired, no request
+593 silly addNameRange number 2 { name: 'finalhandler', range: '>=0.4.0 <0.5.0', hasData: true }
+594 silly addNameRange versions [ 'finalhandler',
+594 silly addNameRange   [ '0.0.0',
+594 silly addNameRange     '0.0.1',
+594 silly addNameRange     '0.0.2',
+594 silly addNameRange     '0.0.3',
+594 silly addNameRange     '0.1.0',
+594 silly addNameRange     '0.2.0',
+594 silly addNameRange     '0.3.0',
+594 silly addNameRange     '0.3.1',
+594 silly addNameRange     '0.3.2',
+594 silly addNameRange     '0.3.3',
+594 silly addNameRange     '0.3.4',
+594 silly addNameRange     '0.3.5',
+594 silly addNameRange     '0.3.6',
+594 silly addNameRange     '0.4.0',
+594 silly addNameRange     '0.4.1',
+594 silly addNameRange     '0.5.0',
+594 silly addNameRange     '0.5.1',
+594 silly addNameRange     '1.0.0',
+594 silly addNameRange     '1.0.1',
+594 silly addNameRange     '1.0.2',
+594 silly addNameRange     '1.0.3',
+594 silly addNameRange     '1.0.4',
+594 silly addNameRange     '1.0.5',
+594 silly addNameRange     '1.0.6',
+594 silly addNameRange     '1.1.0',
+594 silly addNameRange     '1.1.1' ] ]
+595 silly addNamed finalhandler@0.4.1
+596 verbose addNamed "0.4.1" is a plain semver version for finalhandler
+597 verbose get https://registry.npmjs.org/livereload not expired, no request
+598 silly addNameRange number 2 { name: 'livereload', range: '>=0.6.0 <0.7.0', hasData: true }
+599 silly addNameRange versions [ 'livereload',
+599 silly addNameRange   [ '0.3.4',
+599 silly addNameRange     '0.3.5',
+599 silly addNameRange     '0.3.6',
+599 silly addNameRange     '0.3.7',
+599 silly addNameRange     '0.4.0',
+599 silly addNameRange     '0.4.1',
+599 silly addNameRange     '0.5.0',
+599 silly addNameRange     '0.6.0',
+599 silly addNameRange     '0.6.1',
+599 silly addNameRange     '0.6.2',
+599 silly addNameRange     '0.6.3',
+599 silly addNameRange     '0.7.0' ] ]
+600 silly addNamed livereload@0.6.3
+601 verbose addNamed "0.6.3" is a plain semver version for livereload
+602 verbose get https://registry.npmjs.org/le-challenge-sni not expired, no request
+603 silly addNameRange number 2 { name: 'le-challenge-sni',
+603 silly addNameRange   range: '>=2.0.1 <3.0.0',
+603 silly addNameRange   hasData: true }
+604 silly addNameRange versions [ 'le-challenge-sni', [ '2.0.0', '2.0.1' ] ]
+605 silly addNamed le-challenge-sni@2.0.1
+606 verbose addNamed "2.0.1" is a plain semver version for le-challenge-sni
+607 verbose get https://registry.npmjs.org/serve-index not expired, no request
+608 silly addNameRange number 2 { name: 'serve-index', range: '>=1.7.0 <2.0.0', hasData: true }
+609 silly addNameRange versions [ 'serve-index',
+609 silly addNameRange   [ '1.0.0',
+609 silly addNameRange     '1.0.1',
+609 silly addNameRange     '1.0.2',
+609 silly addNameRange     '1.0.3',
+609 silly addNameRange     '1.1.0',
+609 silly addNameRange     '1.1.1',
+609 silly addNameRange     '1.1.2',
+609 silly addNameRange     '1.1.3',
+609 silly addNameRange     '1.1.4',
+609 silly addNameRange     '1.1.5',
+609 silly addNameRange     '1.1.6',
+609 silly addNameRange     '1.2.0',
+609 silly addNameRange     '1.2.1',
+609 silly addNameRange     '1.3.0',
+609 silly addNameRange     '1.3.1',
+609 silly addNameRange     '1.4.0',
+609 silly addNameRange     '1.4.1',
+609 silly addNameRange     '1.5.0',
+609 silly addNameRange     '1.5.1',
+609 silly addNameRange     '1.5.2',
+609 silly addNameRange     '1.5.3',
+609 silly addNameRange     '1.6.0',
+609 silly addNameRange     '1.6.1',
+609 silly addNameRange     '1.6.2',
+609 silly addNameRange     '1.6.3',
+609 silly addNameRange     '1.6.4',
+609 silly addNameRange     '1.7.0',
+609 silly addNameRange     '1.7.1',
+609 silly addNameRange     '1.7.2',
+609 silly addNameRange     '1.7.3',
+609 silly addNameRange     '1.8.0',
+609 silly addNameRange     '1.9.0',
+609 silly addNameRange     '1.9.1' ] ]
+610 silly addNamed serve-index@1.9.1
+611 verbose addNamed "1.9.1" is a plain semver version for serve-index
+612 verbose get https://registry.npmjs.org/server-destroy not expired, no request
+613 silly addNameRange number 2 { name: 'server-destroy',
+613 silly addNameRange   range: '>=1.0.1 <2.0.0',
+613 silly addNameRange   hasData: true }
+614 silly addNameRange versions [ 'server-destroy', [ '1.0.0', '1.0.1' ] ]
+615 silly addNamed server-destroy@1.0.1
+616 verbose addNamed "1.0.1" is a plain semver version for server-destroy
+617 verbose get https://registry.npmjs.org/httpolyglot not expired, no request
+618 silly addNameRange number 2 { name: 'httpolyglot', range: '>=0.1.1 <0.2.0', hasData: true }
+619 silly addNameRange versions [ 'httpolyglot',
+619 silly addNameRange   [ '0.0.1', '0.0.2', '0.1.0', '0.1.1', '0.1.2' ] ]
+620 silly addNamed httpolyglot@0.1.2
+621 verbose addNamed "0.1.2" is a plain semver version for httpolyglot
+622 verbose get https://registry.npmjs.org/localhost.daplie.me-certificates not expired, no request
+623 silly addNameRange number 2 { name: 'localhost.daplie.me-certificates',
+623 silly addNameRange   range: '>=1.3.0 <2.0.0',
+623 silly addNameRange   hasData: true }
+624 silly addNameRange versions [ 'localhost.daplie.me-certificates',
+624 silly addNameRange   [ '1.2.5',
+624 silly addNameRange     '1.2.6',
+624 silly addNameRange     '1.3.0',
+624 silly addNameRange     '1.3.1',
+624 silly addNameRange     '1.3.2',
+624 silly addNameRange     '1.3.3',
+624 silly addNameRange     '1.4.0',
+624 silly addNameRange     '1.3.4',
+624 silly addNameRange     '1.3.5' ] ]
+625 silly addNamed localhost.daplie.me-certificates@1.3.5
+626 verbose addNamed "1.3.5" is a plain semver version for localhost.daplie.me-certificates
+627 warn deprecated localhost.daplie.me-certificates@1.3.5: this package has been deprecated
+628 verbose get https://registry.npmjs.org/minimist not expired, no request
+629 silly addNameRange number 2 { name: 'minimist', range: '>=1.1.1 <2.0.0', hasData: true }
+630 silly addNameRange versions [ 'minimist',
+630 silly addNameRange   [ '0.0.0',
+630 silly addNameRange     '0.0.1',
+630 silly addNameRange     '0.0.2',
+630 silly addNameRange     '0.0.3',
+630 silly addNameRange     '0.0.4',
+630 silly addNameRange     '0.0.5',
+630 silly addNameRange     '0.0.6',
+630 silly addNameRange     '0.0.7',
+630 silly addNameRange     '0.0.8',
+630 silly addNameRange     '0.0.9',
+630 silly addNameRange     '0.0.10',
+630 silly addNameRange     '0.1.0',
+630 silly addNameRange     '0.2.0',
+630 silly addNameRange     '1.0.0',
+630 silly addNameRange     '1.1.0',
+630 silly addNameRange     '1.1.1',
+630 silly addNameRange     '1.1.2',
+630 silly addNameRange     '1.1.3',
+630 silly addNameRange     '1.2.0' ] ]
+631 silly addNamed minimist@1.2.0
+632 verbose addNamed "1.2.0" is a plain semver version for minimist
+633 verbose get https://registry.npmjs.org/serve-static not expired, no request
+634 silly addNameRange number 2 { name: 'serve-static', range: '>=1.10.0 <2.0.0', hasData: true }
+635 silly addNameRange versions [ 'serve-static',
+635 silly addNameRange   [ '1.0.0',
+635 silly addNameRange     '1.0.1',
+635 silly addNameRange     '1.0.2',
+635 silly addNameRange     '1.0.3',
+635 silly addNameRange     '1.0.4',
+635 silly addNameRange     '1.1.0',
+635 silly addNameRange     '1.2.0',
+635 silly addNameRange     '1.2.1',
+635 silly addNameRange     '1.2.2',
+635 silly addNameRange     '1.2.3',
+635 silly addNameRange     '1.3.0',
+635 silly addNameRange     '1.3.1',
+635 silly addNameRange     '1.3.2',
+635 silly addNameRange     '1.4.0',
+635 silly addNameRange     '1.4.1',
+635 silly addNameRange     '1.4.2',
+635 silly addNameRange     '1.4.3',
+635 silly addNameRange     '1.4.4',
+635 silly addNameRange     '1.5.0',
+635 silly addNameRange     '1.5.1',
+635 silly addNameRange     '1.5.2',
+635 silly addNameRange     '1.5.3',
+635 silly addNameRange     '1.5.4',
+635 silly addNameRange     '1.6.0',
+635 silly addNameRange     '1.6.1',
+635 silly addNameRange     '1.6.2',
+635 silly addNameRange     '1.6.3',
+635 silly addNameRange     '1.6.4',
+635 silly addNameRange     '1.7.0',
+635 silly addNameRange     '1.7.1',
+635 silly addNameRange     '1.7.2',
+635 silly addNameRange     '1.8.0',
+635 silly addNameRange     '1.8.1',
+635 silly addNameRange     '1.6.5',
+635 silly addNameRange     '1.9.0',
+635 silly addNameRange     '1.9.1',
+635 silly addNameRange     '1.9.2',
+635 silly addNameRange     '1.9.3',
+635 silly addNameRange     '1.10.0',
+635 silly addNameRange     '1.10.1',
+635 silly addNameRange     '1.10.2',
+635 silly addNameRange     '1.10.3',
+635 silly addNameRange     '1.11.0',
+635 silly addNameRange     '1.11.1',
+635 silly addNameRange     '1.11.2',
+635 silly addNameRange     '1.12.0',
+635 silly addNameRange     '1.12.1',
+635 silly addNameRange     '1.12.2',
+635 silly addNameRange     '1.12.3',
+635 silly addNameRange     '1.12.4',
+635 silly addNameRange     '1.12.5',
+635 silly addNameRange     '1.12.6',
+635 silly addNameRange     '1.13.0',
+635 silly addNameRange     '1.13.1',
+635 silly addNameRange     '1.13.2' ] ]
+636 silly addNamed serve-static@1.13.2
+637 verbose addNamed "1.13.2" is a plain semver version for serve-static
+638 verbose get https://registry.npmjs.org/proxy-addr not expired, no request
+639 silly addNameRange number 2 { name: 'proxy-addr', range: '>=1.1.4 <2.0.0', hasData: true }
+640 silly addNameRange versions [ 'proxy-addr',
+640 silly addNameRange   [ '0.0.0',
+640 silly addNameRange     '0.0.1',
+640 silly addNameRange     '1.0.0',
+640 silly addNameRange     '1.0.1',
+640 silly addNameRange     '1.0.2',
+640 silly addNameRange     '1.0.3',
+640 silly addNameRange     '1.0.4',
+640 silly addNameRange     '1.0.5',
+640 silly addNameRange     '1.0.6',
+640 silly addNameRange     '1.0.7',
+640 silly addNameRange     '1.0.8',
+640 silly addNameRange     '1.0.9',
+640 silly addNameRange     '1.0.10',
+640 silly addNameRange     '1.1.0',
+640 silly addNameRange     '1.1.1',
+640 silly addNameRange     '1.1.2',
+640 silly addNameRange     '1.1.3',
+640 silly addNameRange     '1.1.4',
+640 silly addNameRange     '1.1.5',
+640 silly addNameRange     '2.0.0',
+640 silly addNameRange     '2.0.1',
+640 silly addNameRange     '2.0.2',
+640 silly addNameRange     '2.0.3' ] ]
+641 silly addNamed proxy-addr@1.1.5
+642 verbose addNamed "1.1.5" is a plain semver version for proxy-addr
+643 verbose get https://registry.npmjs.org/bluebird not expired, no request
+644 silly addNameRange number 2 { name: 'bluebird', range: '>=3.4.6 <4.0.0', hasData: true }
+645 silly addNameRange versions [ 'bluebird',
+645 silly addNameRange   [ '0.7.1-1',
+645 silly addNameRange     '0.7.1-2',
+645 silly addNameRange     '0.7.1-3',
+645 silly addNameRange     '0.7.1-4',
+645 silly addNameRange     '0.7.1-5',
+645 silly addNameRange     '0.7.2-0',
+645 silly addNameRange     '0.7.3-0',
+645 silly addNameRange     '0.7.4-0',
+645 silly addNameRange     '0.7.4-1',
+645 silly addNameRange     '0.7.5-0',
+645 silly addNameRange     '0.7.6-0',
+645 silly addNameRange     '0.7.7-0',
+645 silly addNameRange     '0.7.7-1',
+645 silly addNameRange     '0.7.8-0',
+645 silly addNameRange     '0.7.8-1',
+645 silly addNameRange     '0.7.9-0',
+645 silly addNameRange     '0.7.9-1',
+645 silly addNameRange     '0.7.10-0',
+645 silly addNameRange     '0.7.10-1',
+645 silly addNameRange     '0.7.11-0',
+645 silly addNameRange     '0.7.12-0',
+645 silly addNameRange     '0.7.12-1',
+645 silly addNameRange     '0.7.12-2',
+645 silly addNameRange     '0.8.0-0',
+645 silly addNameRange     '0.8.0-1',
+645 silly addNameRange     '0.8.0-2',
+645 silly addNameRange     '0.8.0-3',
+645 silly addNameRange     '0.8.1-0',
+645 silly addNameRange     '0.8.2-0',
+645 silly addNameRange     '0.8.2-1',
+645 silly addNameRange     '0.8.2-2',
+645 silly addNameRange     '0.8.3-0',
+645 silly addNameRange     '0.8.3-1',
+645 silly addNameRange     '0.8.3-2',
+645 silly addNameRange     '0.8.3-3',
+645 silly addNameRange     '0.8.4-0',
+645 silly addNameRange     '0.8.4-1',
+645 silly addNameRange     '0.8.5-0',
+645 silly addNameRange     '0.8.5-1',
+645 silly addNameRange     '0.9.0-0',
+645 silly addNameRange     '0.9.1-0',
+645 silly addNameRange     '0.9.1-1',
+645 silly addNameRange     '0.9.2-0',
+645 silly addNameRange     '0.9.2-1',
+645 silly addNameRange     '0.9.3-0',
+645 silly addNameRange     '0.9.4-0',
+645 silly addNameRange     '0.9.4-1',
+645 silly addNameRange     '0.9.5-0',
+645 silly addNameRange     '0.9.6-0',
+645 silly addNameRange     '0.9.7-0',
+645 silly addNameRange     '0.9.8-0',
+645 silly addNameRange     '0.9.9-0',
+645 silly addNameRange     '0.9.10-0',
+645 silly addNameRange     '0.9.10-1',
+645 silly addNameRange     '0.9.11-0',
+645 silly addNameRange     '0.9.11-1',
+645 silly addNameRange     '0.10.0-0',
+645 silly addNameRange     '0.10.0-1',
+645 silly addNameRange     '0.10.1-0',
+645 silly addNameRange     '0.10.2-0',
+645 silly addNameRange     '0.10.2-1',
+645 silly addNameRange     '0.10.3-0',
+645 silly addNameRange     '0.10.4-0',
+645 silly addNameRange     '0.10.4-1',
+645 silly addNameRange     '0.10.5-0',
+645 silly addNameRange     '0.10.6-0',
+645 silly addNameRange     '0.10.7-0',
+645 silly addNameRange     '0.10.8-0',
+645 silly addNameRange     '0.10.9-0',
+645 silly addNameRange     '0.10.9-1',
+645 silly addNameRange     '0.10.10-0',
+645 silly addNameRange     '0.10.11-0',
+645 silly addNameRange     '0.10.11-1',
+645 silly addNameRange     '0.10.11-2',
+645 silly addNameRange     '0.10.11-4',
+645 silly addNameRange     '0.10.12-0',
+645 silly addNameRange     '0.10.13-0',
+645 silly addNameRange     '0.10.13-1',
+645 silly addNameRange     '0.10.14-0',
+645 silly addNameRange     '0.11.0-0',
+645 silly addNameRange     '0.11.1-0',
+645 silly addNameRange     '0.11.2-0',
+645 silly addNameRange     '0.11.3-0',
+645 silly addNameRange     '0.11.4-0',
+645 silly addNameRange     '0.11.4-1',
+645 silly addNameRange     '0.11.5-0',
+645 silly addNameRange     '0.11.5-1',
+645 silly addNameRange     '0.11.6-0',
+645 silly addNameRange     '1.0.0',
+645 silly addNameRange     '1.0.1',
+645 silly addNameRange     '1.0.2',
+645 silly addNameRange     '1.0.3',
+645 silly addNameRange     '1.0.4',
+645 silly addNameRange     '1.0.5',
+645 silly addNameRange     '1.0.7',
+645 silly addNameRange     '1.0.8',
+645 silly addNameRange     '1.1.0',
+645 silly addNameRange     '1.1.1',
+645 silly addNameRange     '1.2.0',
+645 silly addNameRange     '1.2.1',
+645 silly addNameRange     ... 115 more items ] ]
+646 silly addNamed bluebird@3.5.1
+647 verbose addNamed "3.5.1" is a plain semver version for bluebird
+648 verbose get https://registry.npmjs.org/redirect-https not expired, no request
+649 silly addNameRange number 2 { name: 'redirect-https',
+649 silly addNameRange   range: '>=1.1.0 <2.0.0',
+649 silly addNameRange   hasData: true }
+650 silly addNameRange versions [ 'redirect-https',
+650 silly addNameRange   [ '1.0.0', '1.1.0', '1.1.1', '1.1.3', '1.1.4', '1.1.2', '1.1.5' ] ]
+651 silly addNamed redirect-https@1.1.5
+652 verbose addNamed "1.1.5" is a plain semver version for redirect-https
+653 silly cache afterAdd finalhandler@0.4.1
+654 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\finalhandler\0.4.1\package\package.json not in flight; writing
+655 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+656 silly cache afterAdd le-challenge-sni@2.0.1
+657 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\le-challenge-sni\2.0.1\package\package.json not in flight; writing
+658 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+659 silly cache afterAdd serve-index@1.9.1
+660 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\serve-index\1.9.1\package\package.json not in flight; writing
+661 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+662 silly cache afterAdd server-destroy@1.0.1
+663 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\server-destroy\1.0.1\package\package.json not in flight; writing
+664 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+665 silly cache afterAdd httpolyglot@0.1.2
+666 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\httpolyglot\0.1.2\package\package.json not in flight; writing
+667 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+668 silly cache afterAdd localhost.daplie.me-certificates@1.3.5
+669 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\localhost.daplie.me-certificates\1.3.5\package\package.json not in flight; writing
+670 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+671 silly cache afterAdd livereload@0.6.3
+672 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\livereload\0.6.3\package\package.json not in flight; writing
+673 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+674 silly cache afterAdd minimist@1.2.0
+675 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\minimist\1.2.0\package\package.json not in flight; writing
+676 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+677 silly cache afterAdd serve-static@1.13.2
+678 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\serve-static\1.13.2\package\package.json not in flight; writing
+679 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+680 silly cache afterAdd proxy-addr@1.1.5
+681 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\proxy-addr\1.1.5\package\package.json not in flight; writing
+682 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+683 silly cache afterAdd bluebird@3.5.1
+684 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\bluebird\3.5.1\package\package.json not in flight; writing
+685 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+686 silly cache afterAdd redirect-https@1.1.5
+687 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\redirect-https\1.1.5\package\package.json not in flight; writing
+688 verbose correctMkdir C:\Users\Seanna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+689 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\finalhandler\0.4.1\package\package.json written
+690 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\serve-index\1.9.1\package\package.json written
+691 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\le-challenge-sni\2.0.1\package\package.json written
+692 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\server-destroy\1.0.1\package\package.json written
+693 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\httpolyglot\0.1.2\package\package.json written
+694 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\localhost.daplie.me-certificates\1.3.5\package\package.json written
+695 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\serve-static\1.13.2\package\package.json written
+696 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\minimist\1.2.0\package\package.json written
+697 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\livereload\0.6.3\package\package.json written
+698 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\bluebird\3.5.1\package\package.json written
+699 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\proxy-addr\1.1.5\package\package.json written
+700 verbose afterAdd C:\Users\Seanna\AppData\Roaming\npm-cache\redirect-https\1.1.5\package\package.json written
+701 info git [ 'clone',
+701 info git   '--template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+701 info git   '--mirror',
+701 info git   'https://git.daplie.com/Daplie/node-ddns-client.git',
+701 info git   'C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266' ]
+702 info git [ 'clone',
+702 info git   '--template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+702 info git   '--mirror',
+702 info git   'https://git.daplie.com/Daplie/greenlock-express.git',
+702 info git   'C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb' ]
+703 info git [ 'clone',
+703 info git   '--template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+703 info git   '--mirror',
+703 info git   'https://git.daplie.com/Daplie/daplie-cli-tunnel.git',
+703 info git   'C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b' ]
+704 info git [ 'clone',
+704 info git   '--template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+704 info git   '--mirror',
+704 info git   'https://git.daplie.com/Daplie/le-challenge-webroot.git',
+704 info git   'C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4' ]
+705 info git [ 'clone',
+705 info git   '--template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+705 info git   '--mirror',
+705 info git   'https://git.daplie.com/Daplie/node-tunnel-client.git',
+705 info git   'C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68' ]
+706 info git [ 'clone',
+706 info git   '--template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+706 info git   '--mirror',
+706 info git   'https://git.daplie.com/OAuth3/oauth3-cli.git',
+706 info git   'C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494' ]
+707 info git [ 'clone',
+707 info git   '--template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+707 info git   '--mirror',
+707 info git   'https://git.daplie.com/Daplie/node-greenlock.git',
+707 info git   'C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1' ]
+708 info git [ 'clone',
+708 info git   '--template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+708 info git   '--mirror',
+708 info git   'https://git.daplie.com/Daplie/le-challenge-ddns.git',
+708 info git   'C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91' ]
+709 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/daplie-cli-tunnel.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b: Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b'...
+709 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/daplie-cli-tunnel.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b: fatal: unable to access 'https://git.daplie.com/Daplie/daplie-cli-tunnel.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+710 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/daplie-cli-tunnel.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b
+710 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b'...
+710 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/daplie-cli-tunnel.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+710 silly fetchPackageMetaData
+710 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+710 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+710 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+710 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+710 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+710 silly fetchPackageMetaData  error for daplie-tunnel@git+https://git.daplie.com/Daplie/daplie-cli-tunnel.git#master { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/daplie-cli-tunnel.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b
+710 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b'...
+710 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/daplie-cli-tunnel.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+710 silly fetchPackageMetaData
+710 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+710 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+710 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+710 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+710 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+710 silly fetchPackageMetaData   killed: false,
+710 silly fetchPackageMetaData   code: 128,
+710 silly fetchPackageMetaData   signal: null,
+710 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror https://git.daplie.com/Daplie/daplie-cli-tunnel.git C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b' }
+711 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-tunnel-client.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68: Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68'...
+711 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-tunnel-client.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68: fatal: unable to access 'https://git.daplie.com/Daplie/node-tunnel-client.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+712 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-tunnel-client.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68
+712 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68'...
+712 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/node-tunnel-client.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+712 silly fetchPackageMetaData
+712 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+712 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+712 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+712 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+712 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+712 silly fetchPackageMetaData  error for stunnel@git+https://git.daplie.com/Daplie/node-tunnel-client.git#master { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-tunnel-client.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68
+712 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68'...
+712 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/node-tunnel-client.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+712 silly fetchPackageMetaData
+712 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+712 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+712 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+712 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+712 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+712 silly fetchPackageMetaData   killed: false,
+712 silly fetchPackageMetaData   code: 128,
+712 silly fetchPackageMetaData   signal: null,
+712 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror https://git.daplie.com/Daplie/node-tunnel-client.git C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-node-tunnel-client-git-master-39509a68' }
+713 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-ddns-client.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266: Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266'...
+713 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-ddns-client.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266: fatal: unable to access 'https://git.daplie.com/Daplie/node-ddns-client.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+714 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-ddns-client.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266
+714 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266'...
+714 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/node-ddns-client.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+714 silly fetchPackageMetaData
+714 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+714 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+714 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+714 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+714 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+714 silly fetchPackageMetaData  error for ddns-cli@git+https://git.daplie.com/Daplie/node-ddns-client.git#master { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-ddns-client.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266
+714 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266'...
+714 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/node-ddns-client.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+714 silly fetchPackageMetaData
+714 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+714 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+714 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+714 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+714 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+714 silly fetchPackageMetaData   killed: false,
+714 silly fetchPackageMetaData   code: 128,
+714 silly fetchPackageMetaData   signal: null,
+714 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror https://git.daplie.com/Daplie/node-ddns-client.git C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-node-ddns-client-git-master-67969266' }
+715 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/le-challenge-ddns.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91: Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91'...
+715 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/le-challenge-ddns.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91: fatal: unable to access 'https://git.daplie.com/Daplie/le-challenge-ddns.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+716 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/le-challenge-ddns.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91
+716 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91'...
+716 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/le-challenge-ddns.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+716 silly fetchPackageMetaData
+716 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+716 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+716 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+716 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+716 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+716 silly fetchPackageMetaData  error for le-challenge-ddns@git+https://git.daplie.com/Daplie/le-challenge-ddns.git#master { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/le-challenge-ddns.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91
+716 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91'...
+716 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/le-challenge-ddns.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+716 silly fetchPackageMetaData
+716 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+716 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+716 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+716 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+716 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+716 silly fetchPackageMetaData   killed: false,
+716 silly fetchPackageMetaData   code: 128,
+716 silly fetchPackageMetaData   signal: null,
+716 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror https://git.daplie.com/Daplie/le-challenge-ddns.git C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-le-challenge-ddns-git-master-2ad57a91' }
+717 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/le-challenge-webroot.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4: Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4'...
+717 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/le-challenge-webroot.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4: fatal: unable to access 'https://git.daplie.com/Daplie/le-challenge-webroot.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+718 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/le-challenge-webroot.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4
+718 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4'...
+718 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/le-challenge-webroot.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+718 silly fetchPackageMetaData
+718 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+718 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+718 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+718 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+718 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+718 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+718 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+718 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:498:12)
+718 silly fetchPackageMetaData  error for le-challenge-fs@git+https://git.daplie.com/Daplie/le-challenge-webroot.git#master { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/le-challenge-webroot.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4
+718 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4'...
+718 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/le-challenge-webroot.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+718 silly fetchPackageMetaData
+718 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+718 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+718 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+718 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+718 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+718 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+718 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+718 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:498:12)
+718 silly fetchPackageMetaData   killed: false,
+718 silly fetchPackageMetaData   code: 128,
+718 silly fetchPackageMetaData   signal: null,
+718 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror https://git.daplie.com/Daplie/le-challenge-webroot.git C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-le-challenge-webroot-git-master-5c14dde4' }
+719 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/OAuth3/oauth3-cli.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494: Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494'...
+719 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/OAuth3/oauth3-cli.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494: fatal: unable to access 'https://git.daplie.com/OAuth3/oauth3-cli.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+720 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/OAuth3/oauth3-cli.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494
+720 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494'...
+720 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/OAuth3/oauth3-cli.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+720 silly fetchPackageMetaData
+720 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+720 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+720 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+720 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+720 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+720 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+720 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+720 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:498:12)
+720 silly fetchPackageMetaData  error for oauth3-cli@git+https://git.daplie.com/OAuth3/oauth3-cli.git#master { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/OAuth3/oauth3-cli.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494
+720 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494'...
+720 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/OAuth3/oauth3-cli.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+720 silly fetchPackageMetaData
+720 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+720 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+720 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+720 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+720 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+720 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+720 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+720 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:498:12)
+720 silly fetchPackageMetaData   killed: false,
+720 silly fetchPackageMetaData   code: 128,
+720 silly fetchPackageMetaData   signal: null,
+720 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror https://git.daplie.com/OAuth3/oauth3-cli.git C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-OAuth3-oauth3-cli-git-master-487af494' }
+721 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/greenlock-express.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb: Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb'...
+721 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/greenlock-express.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb: fatal: unable to access 'https://git.daplie.com/Daplie/greenlock-express.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+722 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/greenlock-express.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb
+722 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb'...
+722 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/greenlock-express.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+722 silly fetchPackageMetaData
+722 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+722 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+722 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+722 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+722 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+722 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+722 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+722 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:498:12)
+722 silly fetchPackageMetaData  error for greenlock-express@git+https://git.daplie.com/Daplie/greenlock-express.git#master { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/greenlock-express.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb
+722 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb'...
+722 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/greenlock-express.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+722 silly fetchPackageMetaData
+722 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+722 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+722 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+722 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+722 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+722 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+722 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+722 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:498:12)
+722 silly fetchPackageMetaData   killed: false,
+722 silly fetchPackageMetaData   code: 128,
+722 silly fetchPackageMetaData   signal: null,
+722 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror https://git.daplie.com/Daplie/greenlock-express.git C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-greenlock-express-git-master-0e2b16cb' }
+723 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-greenlock.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1: Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1'...
+723 error git clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-greenlock.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1: fatal: unable to access 'https://git.daplie.com/Daplie/node-greenlock.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+724 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-greenlock.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1
+724 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1'...
+724 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/node-greenlock.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+724 silly fetchPackageMetaData
+724 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+724 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+724 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+724 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+724 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+724 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+724 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+724 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:498:12)
+724 silly fetchPackageMetaData  error for greenlock@git+https://git.daplie.com/Daplie/node-greenlock.git#master { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/node-greenlock.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1
+724 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1'...
+724 silly fetchPackageMetaData fatal: unable to access 'https://git.daplie.com/Daplie/node-greenlock.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+724 silly fetchPackageMetaData
+724 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+724 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+724 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+724 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+724 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+724 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+724 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+724 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:498:12)
+724 silly fetchPackageMetaData   killed: false,
+724 silly fetchPackageMetaData   code: 128,
+724 silly fetchPackageMetaData   signal: null,
+724 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror https://git.daplie.com/Daplie/node-greenlock.git C:\\Users\\Seanna\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-git-daplie-com-Daplie-node-greenlock-git-master-ce30d0e1' }
+725 silly rollbackFailedOptional Starting
+726 silly rollbackFailedOptional Finishing
+727 silly runTopLevelLifecycles Finishing
+728 silly install printInstalled
+729 verbose stack Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/daplie-cli-tunnel.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b
+729 verbose stack Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b'...
+729 verbose stack fatal: unable to access 'https://git.daplie.com/Daplie/daplie-cli-tunnel.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+729 verbose stack
+729 verbose stack     at ChildProcess.exithandler (child_process.js:206:12)
+729 verbose stack     at emitTwo (events.js:106:13)
+729 verbose stack     at ChildProcess.emit (events.js:191:7)
+729 verbose stack     at maybeClose (internal/child_process.js:877:16)
+729 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+730 verbose cwd C:\Users\Seanna\Documents\Software Projects\AREMA-web
+731 error Windows_NT 10.0.16299
+732 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--global" "serve-https"
+733 error node v6.9.5
+734 error npm  v3.10.10
+735 error code 128
+736 error Command failed: git -c core.longpaths=true clone --template=C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://git.daplie.com/Daplie/daplie-cli-tunnel.git C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b
+736 error Cloning into bare repository 'C:\Users\Seanna\AppData\Roaming\npm-cache\_git-remotes\git-https-git-daplie-com-Daplie-daplie-cli-tunnel-git-master-947f8a9b'...
+736 error fatal: unable to access 'https://git.daplie.com/Daplie/daplie-cli-tunnel.git/': SSL: no alternative certificate subject name matches target host name 'git.daplie.com'
+737 error If you need help, you may report this error at:
+737 error     <https://github.com/npm/npm/issues>
+738 verbose exit [ 1, true ]

@@ -110,7 +110,8 @@
 	scene.add(markerRoot)
 	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
 		type : 'pattern',
-		patternUrl : "break.patt"
+		patternUrl: "patt.hiro"
+		//patternUrl : "break.patt"
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.kanji'
 	})
 
@@ -142,7 +143,7 @@
     directionalLight.shadowCameraTop = 50;
     directionalLight.shadowCameraBottom = -50;
     directionalLight.distance = 0;
-    directionalLight.intensity = 0.5;
+    directionalLight.intensity = 0.25;
     directionalLight.shadowMapHeight = 1024;
     directionalLight.shadowMapWidth = 1024;
     scene.add(directionalLight);
@@ -235,18 +236,19 @@
 		//lizard.rotatio
 		//lizard.rotation.x = Math.random() * 180;
 
-		lizard.finalSize = 0.004;
+		//lizard.finalSize = 0.004;
+		lizard.finalSize = 0.004; // For my hamsters;
 		lizard.growing = true;
 		lizard.growTimer = 1;
 		lizard.timeToGrow = 500;
 
 		if (phase == 2) {
-	        lizard.children[0].material = new THREE.MeshLambertMaterial({color: 0xff0000, transparent: true, opacity: 1});	    	
+	        //lizard.children[0].material = new THREE.MeshLambertMaterial({color: 0xff0000, transparent: true, opacity: 1});	    	
 	    }
 
 		lizard.move = function() {
         	this.translateZ(0.008);
-	        this.children[0].material.opacity = creatureOpacity;
+	        //this.children[0].material.opacity = creatureOpacity;
 
 	        if (this.growing) {
 	        	this.growTimer++;
@@ -280,13 +282,13 @@
 	var loader = new THREE.FBXLoader();
 	var lizardPrototype;
 
-    loader.load('lizard.fbx', function (object3d) {
+    loader.load('Cult_Gerbil_2.fbx', function (object3d) {
         //object3d.scale.set(0.001, 0.001, 0.001);
         object3d.scale.set(0.00001, 0.00001, 0.00001);
         object3d.position.set(0, 0, 0);
         lizardPrototype = object3d;
 
-        lizardPrototype.children[0].material = new THREE.MeshLambertMaterial({color: 0x44bb44, transparent: true, opacity: 1});
+        /*lizardPrototype.children[0].material = new THREE.MeshLambertMaterial({color: 0x44bb44, transparent: true, opacity: 1});*/
 
 
         lizardPrototype.move = function() {
