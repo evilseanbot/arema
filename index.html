@@ -105,32 +105,37 @@
 	////////////////////////////////////////////////////////////////////////////////
 	//          Create a ArMarkerControls
 	////////////////////////////////////////////////////////////////////////////////
-	
-	var markerRoot = new THREE.Group
-	scene.add(markerRoot)
-	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
-		type : 'pattern',
-		patternUrl: "patt.hiro"
-		//patternUrl : "break.patt"
-		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.kanji'
-	})
 
-	// build a smoothedControls
-	var smoothedRoot = new THREE.Group()
-	scene.add(smoothedRoot)
-	var smoothedControls = new THREEx.ArSmoothedControls(smoothedRoot, {
-		lerpPosition: 0.4,
-		lerpQuaternion: 0.3,
-		lerpScale: 1,
-	})
-	onRenderFcts.push(function(delta){
-		smoothedControls.update(markerRoot)
-	})
+	function AddRoot(pattUrl) {
+		var markerRoot2 = new THREE.Group
+		scene.add(markerRoot2)
+		var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot2, {
+			type : 'pattern',
+			patternUrl: pattUrl
+		})
+
+		// build a smoothedControls
+		var smoothedRoot2 = new THREE.Group()
+		scene.add(smoothedRoot2)
+		var smoothedControls2 = new THREEx.ArSmoothedControls(smoothedRoot2, {
+			lerpPosition: 0.4,
+			lerpQuaternion: 0.3,
+			lerpScale: 1,
+		})
+		onRenderFcts.push(function(delta){
+			smoothedControls2.update(markerRoot2)
+		})
+
+		return smoothedRoot2;
+	}
+
+	var arWorldRootDoll = AddRoot("doll_house_pattern-marker.patt");
+	var arWorldRootSpider = AddRoot("spider_pattern-marker.patt");
+	var arWorldRoot = AddRoot("gerbil_pattern-marker.patt");
+
 	//////////////////////////////////////////////////////////////////////////////////
 	//		add an object in the scene
 	//////////////////////////////////////////////////////////////////////////////////
-
-	var arWorldRoot = smoothedRoot
 
     var pointColor = "#ffffff";
     var directionalLight = new THREE.DirectionalLight(pointColor);
@@ -143,7 +148,7 @@
     directionalLight.shadowCameraTop = 50;
     directionalLight.shadowCameraBottom = -50;
     directionalLight.distance = 0;
-    directionalLight.intensity = 0.25;
+    directionalLight.intensity = 1;
     directionalLight.shadowMapHeight = 1024;
     directionalLight.shadowMapWidth = 1024;
     scene.add(directionalLight);
@@ -237,7 +242,7 @@
 		//lizard.rotation.x = Math.random() * 180;
 
 		//lizard.finalSize = 0.004;
-		lizard.finalSize = 0.004; // For my hamsters;
+		lizard.finalSize = 0.001; // For my hamsters;
 		lizard.growing = true;
 		lizard.growTimer = 1;
 		lizard.timeToGrow = 500;
@@ -247,7 +252,7 @@
 	    }
 
 		lizard.move = function() {
-        	this.translateZ(0.008);
+        	this.translateZ(0.004);
 	        //this.children[0].material.opacity = creatureOpacity;
 
 	        if (this.growing) {
@@ -282,7 +287,7 @@
 	var loader = new THREE.FBXLoader();
 	var lizardPrototype;
 
-    loader.load('Cult_Gerbil_2.fbx', function (object3d) {
+    loader.load('Gerbil.fbx', function (object3d) {
         //object3d.scale.set(0.001, 0.001, 0.001);
         object3d.scale.set(0.00001, 0.00001, 0.00001);
         object3d.position.set(0, 0, 0);
@@ -300,6 +305,19 @@
 
     });
 
+    loader.load("Spider.fbx", function (object3d) {
+    	object3d.scale.set(0.004, 0.004, 0.004);
+    	object3d.position.set(0, 0, 0);
+    	arWorldRootSpider.add(object3d);
+    });
+
+    loader.load("Barbie.fbx", function (object3d) {
+    	object3d.scale.set(0.001, 0.001, 0.001);
+    	object3d.position.set(0, 0, 0);
+    	arWorldRootDoll.add(object3d);
+    });
+
+
     var creatureOpacity = 1;
 
     onRenderFcts.push(() => {
@@ -308,7 +326,7 @@
 
     var phase = 1;
 
-	onRenderFcts.push(() => {
+	/*onRenderFcts.push(() => {
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
 			if (this.readyState == 4) {
@@ -354,7 +372,7 @@
 		}
 		xhttp.open("GET", "phase.txt", true);
 		xhttp.send();
-	});
+	});*/
 
 	/*var geometry	= new THREE.TorusKnotGeometry(0.3,0.1,64,16);
 	var material	= new THREE.MeshNormalMaterial(); 
